@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_add_new_rider"
+        android:name="com.teamevox.freshfred.ui.addrider.AddNewRiderFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_add_new_rider" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.teamevox.freshfred.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_shop_home" />
+
+    <fragment
+        android:id="@+id/nav_add_food"
+        android:name="com.teamevox.freshfred.ui.addfood.AddFoodFragment"
+        android:label="@string/menu_add_food" />
+
+    <fragment
+        android:id="@+id/nav_request_supply"
+        android:name="com.teamevox.freshfred.ui.supply.RequestSupplyFragment"
+        android:label="@string/menu_request_supply" />
+    <fragment
+        android:id="@+id/nav_rider_account"
+        android:name="com.teamevox.freshfred.ui.rideraccount.RiderAccount"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_rider_interface" />
+    <activity
+        android:id="@+id/updateRiderDetails"
+        android:name="com.teamevox.freshfred.UpdateRiderDetails"
+        android:label="activity_update_rider_details"
+        tools:layout="@layout/activity_update_rider_details" />
+</navigation>

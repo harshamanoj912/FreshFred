@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_cart" />
+
+
+    </group>
+
+
+    <item android:title="Supplier Section">
+        <menu>
+            <item
+                android:id="@+id/nav_supplier_account"
+                android:icon="@drawable/ic_bike"
+                android:title="@string/menu_supplier" />
+        </menu>
+    </item>
+
+
+    <item android:title="Rider section">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_rider_account"
+                android:icon="@drawable/ic_bike"
+                android:title="@string/menu_delivery" />
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="Admin Panel">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_add_food"
+                android:icon="@drawable/ic_food"
+                android:title="@string/menu_add_food" />
+            <item
+                android:id="@+id/nav_request_supply"
+                android:icon="@drawable/ic_supply"
+                android:title="@string/menu_request_supply" />
+
+            <item
+                android:id="@+id/nav_add_new_rider"
+                android:icon="@drawable/ic_bike"
+                android:title="@string/menu_add_rider" />
+
+
+        </menu>
+
+    </item>
+
+
+</menu>

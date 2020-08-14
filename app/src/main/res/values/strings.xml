@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">FreshFred</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Nav header -->
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_subtitle">07XXXXXXXX</string>
+
+    <!-- Nav header menu items -->
+    <string name="menu_home">Shop</string>
+    <string name="menu_add_food">Add Foods</string>
+    <string name="menu_request_supply">Request Supply</string>
+    <string name="menu_add_rider">Add New Rider</string>
+    <string name="menu_rider_profile">Rider Profile</string>
+    <string name="menu_cart">My Cart</string>
+    <string name="menu_supplier">I am a supplier</string>
+    <string name="menu_delivery">I am a rider</string>
+    <string name="menu_supplier_profile">Add New Rider</string>
+
+    <string name="logged_mobile_number">07XXXXXXXX</string>  <!-- This is for logged users -->
+    <string name="menu_login_register">Login/Register</string> <!-- This is for not logged users -->
+
+    <!-- IT19208718 | S.M.H.M.Suraweera -->
+    <string name="add_new_rider">Add new rider</string>
+
+    <string name="rider_name">First name</string>
+    <string name="rider_mobile_number">Mobile number</string>
+    <string name="rider_bike_number">Bike number</string>
+    <string name="rider_commission">Commission</string>
+    <string name="rider_default_password">Password</string>
+    <string name="rider_btn">Add now</string>
+    <string name="rider_photo">Add new photo</string>
+
+    <string name="rider_profile">Welcome Rider</string>
+    <string name="rider_profile_order_for_distribution">Orders for distribution</string>
+    <string name="rider_profile_daily_sales_report">Daily sales report</string>
+    <string name="rider_profile_distributed_orders">Distributed orders</string>
+    <string name="rider_profile_manage_account">My account</string>
+    <string name="rider_profile_logout">Logout</string>
+    <string name="rider_profile_welcome">Change your details</string>
+
+
+</resources>
