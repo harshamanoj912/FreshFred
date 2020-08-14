@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OrdersForDistribution"></activity>
-        <activity android:name=".UpdateRiderDetails"></activity>
+        <activity android:name=".DailySalesReprt"></activity>
+        <activity android:name=".DistributedOrders" />
+        <activity android:name=".OrdersForDistribution" />
+        <activity android:name=".UpdateRiderDetails" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
