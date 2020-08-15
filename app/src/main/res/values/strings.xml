@@ -33,6 +33,32 @@
     <string name="rider_btn">Add now</string>
     <string name="rider_photo">Add a photo</string>
 
+    <!-- IT19208718 | S.M.H.M.Suraweera | String arrays for recycler view-->
+    <string-array name="ordered_food_names">
+        <item>Luger Burger</item>
+        <item>Whiskey King Burger</item>
+    </string-array>
+
+    <string-array name="ordered_food_qty">
+        <item>Quantity : 02</item>
+        <item>Quantity : 04</item>
+    </string-array>
+
+    <string-array name="ordered_food_price">
+        <item>Price : 1400LKR</item>
+        <item>Price : 3200LKR</item>
+    </string-array>
+
+    <string-array name="ordered_food_mobile">
+        <item>Mobile : 0774809190</item>
+        <item>Mobile : 0776409190</item>
+    </string-array>
+
+    <string-array name="ordered_food_address">
+        <item>No02, DK Street, Colombo 01</item>
+        <item>No02, DK Street, Colombo 02</item>
+    </string-array>
+
     <string name="rider_profile">Welcome Rider</string>
     <string name="rider_profile_order_for_distribution">Orders for distribution</string>
     <string name="rider_profile_daily_sales_report">Daily sales report</string>
@@ -47,6 +73,7 @@
     <string name="ordered_food_delivery_mobile">Mobile : 0774809190</string>
     <string name="ordered_food_delivery_address">Address : No 2, DK Street, Colombo 02</string>
     <string name="ordered_food_mark_as_shipped_btn_txt">Mark as shipped</string>
+    <string name="ordered_food_list_img_txt">imgs</string>
     <string name="ordered_food_mark_as_cancel_btn_txt">Mark as cancel</string>
     <string name="orders_for_distribution_welcome">Orders for distribution</string>
 

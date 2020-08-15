@@ -15,8 +15,8 @@ import com.teamevox.freshfred.DailySalesReprt;
 import com.teamevox.freshfred.DistributedOrders;
 import com.teamevox.freshfred.OrdersForDistribution;
 import com.teamevox.freshfred.R;
+import com.teamevox.freshfred.SampleOrdersForDistributing;
 import com.teamevox.freshfred.UpdateRiderDetails;
-import java.util.zip.Inflater;
 
 public class RiderAccount extends Fragment  {
     Button b1, b2, b3, b4;
@@ -41,7 +41,11 @@ public class RiderAccount extends Fragment  {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), OrdersForDistribution.class));
+
+                 //startActivity( new Intent(view.getContext(), SampleOrdersForDistributing.class));
+                 //  startActivity(new Intent(getActivity(), SampleOrdersForDistributing.class)); // for recycler view
+
+                 startActivity(new Intent(getActivity(), OrdersForDistribution.class)); // for normal view
             }
         });
 
