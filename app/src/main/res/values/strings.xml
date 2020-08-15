@@ -25,7 +25,6 @@
 
     <!-- IT19208718 | S.M.H.M.Suraweera -->
     <string name="add_new_rider">Add new rider</string>
-
     <string name="rider_name">First name</string>
     <string name="rider_mobile_number">Mobile number</string>
     <string name="rider_bike_number">Bike number</string>
@@ -42,7 +41,6 @@
     <string name="rider_profile_logout">Logout</string>
     <string name="rider_profile_welcome">Update detials</string>
 
-
     <string name="ordered_food_name">Burger Hagover</string>
     <string name="ordered_food_quantity">Quantity : 02</string>
     <string name="ordered_food_price">Price : 1790LKR</string>
@@ -52,7 +50,6 @@
     <string name="ordered_food_mark_as_cancel_btn_txt">Mark as cancel</string>
     <string name="orders_for_distribution_welcome">Orders for distribution</string>
 
-
     <string name="distributed_orders_welcome">Distributed orders</string>
     <string name="distributed_orders_food_name">Burger Hagover</string>
     <string name="distributed_orders_food_quantity">Quantity : 02</string>
@@ -60,16 +57,12 @@
     <string name="distributed_orders_mobile">Mobile : 0774809190</string>
     <string name="distributed_orders_address">Address : No 2, DK Street, Colombo 02</string>
 
-
     <string name="sales_report_welcome">Daily sales reprt</string>
     <string name="sales_report_date">Date : 10/09/2020</string>
     <string name="sales_report_total_delivered_qty">Total delivered : 10</string>
     <string name="sales_report_total_amount">Total amount : 6790 LKR</string>
     <string name="sales_report_commission">Commission : 1018.50 LKR</string>
     <string name="sales_report_show_yesterday">Show yesterday</string>
-
-
-
 
 
 </resources>
