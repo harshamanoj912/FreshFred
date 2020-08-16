@@ -7,19 +7,23 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.teamevox.freshfred.DailySalesReprt;
 import com.teamevox.freshfred.DistributedOrders;
+import com.teamevox.freshfred.MainActivity;
 import com.teamevox.freshfred.OrdersForDistribution;
 import com.teamevox.freshfred.R;
+import com.teamevox.freshfred.SampleOrdersForDistributing;
 import com.teamevox.freshfred.UpdateRiderDetails;
-import java.util.zip.Inflater;
+import com.teamevox.freshfred.ui.home.HomeFragment;
 
 public class RiderAccount extends Fragment  {
-    Button b1, b2, b3, b4;
+    Button b1, b2, b3, b4, b5, b6;
 
     @Nullable
     @Override
@@ -41,7 +45,11 @@ public class RiderAccount extends Fragment  {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), OrdersForDistribution.class));
+
+                 //startActivity( new Intent(view.getContext(), SampleOrdersForDistributing.class));
+                //  startActivity(new Intent(getActivity(), SampleOrdersForDistributing.class)); // for recycler view
+
+                startActivity(new Intent(getActivity(), OrdersForDistribution.class)); // for normal view
             }
         });
 
@@ -58,9 +66,29 @@ public class RiderAccount extends Fragment  {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
+                Toast toast = Toast.makeText(getContext(), "Loading Sales Report", Toast.LENGTH_LONG);
+                toast.show();
+
                 startActivity(new Intent(getActivity(), DailySalesReprt.class));
             }
         });
+
+
+        b5 = view.findViewById(R.id.riderLogOut);
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast toast = Toast.makeText(getContext(), "Login Out", Toast.LENGTH_LONG);
+                toast.show();
+
+
+
+            }
+        });
+
 
 
 
