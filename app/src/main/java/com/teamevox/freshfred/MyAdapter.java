@@ -1,6 +1,7 @@
 package com.teamevox.freshfred;
 //IT19208718 recycler view
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    LayoutInflater layoutInflater;
 
     String[] arrayfoodName;
     String[] arrayfoodQty;
@@ -44,7 +45,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
 
         holder.rfoodName.setText(arrayfoodName[position]);
         holder.rquantity.setText(arrayfoodQty[position]);
@@ -52,6 +53,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.rmobileNumber.setText(arrayfoodMobile[position]);
         holder.raddress.setText(arrayfoodAddress[position]);
         holder.rimgView.setImageResource(arrayorderedFoodImg[position]);
+
+
+
+
 
 
     }
@@ -66,6 +71,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         TextView rfoodName, rquantity, rprice, rmobileNumber, raddress;
         ImageView rimgView;
+        ConstraintLayout mainLayoutN;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -76,6 +82,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             rmobileNumber = itemView.findViewById(R.id.orderedListFoodMobile);
             raddress = itemView.findViewById(R.id.orderedListFoodAddress);
             rimgView = itemView.findViewById(R.id.orderedListFoodImage);
+
+            mainLayoutN = itemView.findViewById(R.id.mainLayoutN);
         }
     }
 }

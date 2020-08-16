@@ -30,7 +30,7 @@ public class SampleOrdersForDistributing extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sample_orders_for_distribuation);
 
-        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recycler_View);
 
         foodName_ = getResources().getStringArray(R.array.ordered_food_names);
         foodQty_ = getResources().getStringArray(R.array.ordered_food_qty);
@@ -41,9 +41,9 @@ public class SampleOrdersForDistributing extends AppCompatActivity {
         MyAdapter adapter = new MyAdapter(this, foodName_, foodQty_, foodPrice_, foodMobile_, foodAddress_, orderedFoodImg_);
 
 
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
 
 
     }

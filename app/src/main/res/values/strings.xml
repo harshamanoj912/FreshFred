@@ -73,7 +73,6 @@
     <string name="ordered_food_delivery_mobile">Mobile : 0774809190</string>
     <string name="ordered_food_delivery_address">Address : No 2, DK Street, Colombo 02</string>
     <string name="ordered_food_mark_as_shipped_btn_txt">Mark as shipped</string>
-    <string name="ordered_food_list_img_txt">imgs</string>
     <string name="ordered_food_mark_as_cancel_btn_txt">Mark as cancel</string>
     <string name="orders_for_distribution_welcome">Orders for distribution</string>
 
