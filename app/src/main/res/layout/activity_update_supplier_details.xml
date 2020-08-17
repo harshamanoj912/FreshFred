@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".UpdateSupplierDetails">
+
+    <TextView
+        android:id="@+id/welcomeTextUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="@string/supplier_profile_welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+
+    <EditText
+        android:id="@+id/supplierPassword"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:text="45888364125"
+        android:textColor="#B53F3F"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646"
+        tools:ignore="RtlSymmetry" />
+
+
+    <EditText
+        android:id="@+id/supplierItem"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="sugar"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/supplierMobile"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="0763245869"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/supplierName"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text=" vimal perera"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+
+    <TextView
+        android:id="@+id/supplierNameUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="@string/Supplier_Name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/supplierPasswordUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rider_default_password"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.644" />
+
+    <TextView
+        android:id="@+id/supplierPhotoUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supplier_photo"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.756" />
+
+    <TextView
+        android:id="@+id/supplierMobileUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supplier_mobile_number"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <TextView
+        android:id="@+id/supplyItemUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rider_commission"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:text="supply item" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:text="Delete Account"
+        android:textColor="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:text="Update"
+        android:textColor="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <ImageView
+        android:id="@+id/updateProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836"
+        app:srcCompat="@drawable/default_picture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
