@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DailySalesReprt"></activity>
+        <activity android:name=".OrderRequest"></activity>
+        <activity android:name=".UpdateSupplierDetails" />
+        <activity android:name=".SupplierInterface" />
+        <activity android:name=".AddNewSupplier" />
+        <activity android:name=".DailySalesReprt" />
         <activity android:name=".DistributedOrders" />
         <activity android:name=".OrdersForDistribution" />
         <activity android:name=".UpdateRiderDetails" />
