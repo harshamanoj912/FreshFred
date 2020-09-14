@@ -31,7 +31,10 @@
     <string name="rider_commission">Commission</string>
     <string name="rider_default_password">Password</string>
     <string name="rider_btn">Add now</string>
-    <string name="rider_photo">Add a photo</string>
+    <string name="rider_photo">Choose Photo</string>
+    <string name="rider_nic">NIC Number</string>
+    <string name="rider_nic_up">NIC Number\n(Fixed)</string>
+    <string name="rider_commissio_up">Commission\n(Fixed)</string>
 
     <!-- IT19208718 | S.M.H.M.Suraweera | String arrays for recycler view-->
     <string-array name="ordered_food_names">
@@ -111,6 +114,7 @@
     <string name="Supplier_name">vimal perera</string>
     <string name="Supplier_Name">supplier name</string>
     <string name="supplier_photo">supplier photo</string>
+
 
 
 </resources>

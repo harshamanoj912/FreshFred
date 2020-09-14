@@ -26,7 +26,7 @@
     <EditText
         android:id="@+id/riderName"
         android:layout_width="296dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:hint="@string/rider_name"
         android:inputType="textPersonName"
@@ -44,7 +44,7 @@
     <EditText
         android:id="@+id/riderMobile"
         android:layout_width="296dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:hint="@string/rider_mobile_number"
         android:inputType="textPersonName"
@@ -54,17 +54,18 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458"
+        app:layout_constraintVertical_bias="0.523"
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/riderBikeNumber"
+        android:id="@+id/riderNic"
         android:layout_width="296dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="@string/rider_bike_number"
+        android:hint="@string/rider_nic"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:textColor="#3F51B5"
@@ -72,33 +73,16 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576"
-        tools:ignore="RtlSymmetry" />
-
-    <EditText
-        android:id="@+id/riderCommission"
-        android:layout_width="296dp"
-        android:layout_height="51dp"
-        android:background="@drawable/rounded_edittext"
-        android:hint="@string/rider_commission"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:textColor="#3F51B5"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#0027FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698"
+        app:layout_constraintVertical_bias="0.428"
         tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/riderPassword"
         android:layout_width="296dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:hint="@string/rider_default_password"
         android:inputType="textPersonName"
@@ -108,9 +92,48 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.819"
+        app:layout_constraintVertical_bias="0.808"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/riderCommission"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/rider_commission"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/riderBikeNumber"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/rider_bike_number"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.618"
         tools:ignore="RtlSymmetry" />
 
     <Button

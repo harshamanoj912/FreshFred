@@ -23,14 +23,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
-
+        app:layout_constraintVertical_bias="0.047" />
 
     <EditText
-        android:text="1131egebebew"
-        android:id="@+id/riderPassword"
+
+        android:id="@+id/riderNameUP"
         android:layout_width="200dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
+    <EditText
+
+        android:id="@+id/riderPasswordUP"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
@@ -42,84 +59,23 @@
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646"
+        app:layout_constraintVertical_bias="0.655"
         tools:ignore="RtlSymmetry" />
 
-    <EditText
-        android:text="BAN-45678"
-        android:id="@+id/riderBikeNumber"
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/rounded_edittext"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:textColor="#3F51B5"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#0027FF"
+    <TextView
+        android:id="@+id/riderMobileUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rider_mobile_number"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/amarante"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413"
-        tools:ignore="RtlSymmetry" />
-
-    <EditText
-        android:hint="15% - This is fixed"
-        android:editable="false"
-        android:id="@+id/riderCommission"
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/rounded_edittext"
-        android:paddingLeft="20dp"
-        android:inputType="none"
-        android:textColor="#3F51B5"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#0027FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.528"
-        tools:ignore="RtlSymmetry" />
-
-    <EditText
-        android:text="074809190"
-        android:id="@+id/riderMobile"
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/rounded_edittext"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:textColor="#3F51B5"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#0027FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3"
-        tools:ignore="RtlSymmetry" />
-
-    <EditText
-        android:text="Amal Bandara"
-        android:id="@+id/rierName"
-        android:layout_width="200dp"
-        android:layout_height="51dp"
-        android:background="@drawable/rounded_edittext"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:textColor="#3F51B5"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#0027FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.184"/>
+        app:layout_constraintVertical_bias="0.322" />
 
     <TextView
         android:id="@+id/riderNameUpdated"
@@ -134,7 +90,131 @@
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
+        app:layout_constraintVertical_bias="0.204" />
+
+    <EditText
+
+        android:id="@+id/riderMobileUP"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+
+        android:id="@+id/riderBikeNumberUP"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/riderPasswordUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="@string/rider_default_password"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <TextView
+        android:id="@+id/riderNicUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="@string/rider_nic_up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <EditText
+
+        android:id="@+id/riderNicUP"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:editable="false"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/riderCommissionUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="@string/rider_commissio_up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <EditText
+
+        android:id="@+id/riderCommissionUP"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:editable="false"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
         android:id="@+id/riderBikeNumberUpdated"
@@ -143,71 +223,17 @@
         android:text="@string/rider_bike_number"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        android:fontFamily="@font/amarante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419" />
+        app:layout_constraintVertical_bias="0.428" />
 
-    <TextView
-        android:id="@+id/riderPasswordUpdated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rider_default_password"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637" />
-
-    <TextView
-        android:id="@+id/riderPhotoUpdated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rider_photo"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756" />
-
-    <TextView
-        android:id="@+id/riderMobileUpdated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rider_mobile_number"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.312" />
-
-    <TextView
-        android:id="@+id/riderCommissionUpdated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/rider_commission"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
 
     <Button
-        android:id="@+id/deleteButton"
+        android:id="@+id/deleteRiderAccount"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/rounded_edittext"
@@ -218,7 +244,7 @@
         app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.94" />
 
     <Button
         android:id="@+id/updateButton"
@@ -232,18 +258,33 @@
         app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.94" />
+    <!--
+        <ImageView
+            android:id="@+id/updateProfilePicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.562"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.836"
+            app:srcCompat="@drawable/default_picture" />
 
-    <ImageView
-        android:id="@+id/updateProfilePicture"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836"
-        app:srcCompat="@drawable/default_picture" />
+        <TextView
+            android:id="@+id/riderPhotoUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rider_photo"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.756" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
