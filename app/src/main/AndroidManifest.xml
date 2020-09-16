@@ -3,21 +3,21 @@
     package="com.teamevox.freshfred">
 
     <application
+        android:name=".GlobalClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-      
-        <activity android:name=".OrderRequest"></activity>
+        <activity android:name=".RiderPortal"></activity>
+        <activity android:name=".RiderLogin" />
+        <activity android:name=".OrderRequest" />
         <activity android:name=".UpdateSupplierDetails" />
         <activity android:name=".SupplierInterface" />
         <activity android:name=".AddNewSupplier" />
-
-        <activity android:name=".SampleOrdersForDistributing"/>
-      
-        <activity android:name=".DailySalesReprt" />
+        <activity android:name=".SampleOrdersForDistributing" />
+        <activity android:name=".DailySalesReport" />
         <activity android:name=".DistributedOrders" />
         <activity android:name=".OrdersForDistribution" />
         <activity android:name=".UpdateRiderDetails" />

@@ -33,9 +33,10 @@
         <menu>
 
             <item
-                android:id="@+id/nav_rider_account"
+                android:id="@+id/riderLogin"
                 android:icon="@drawable/ic_bike"
-                android:title="@string/menu_delivery" />
+                android:title="Rider Login" />
+
 
         </menu>
 

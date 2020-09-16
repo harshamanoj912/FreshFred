@@ -92,7 +92,14 @@
     <string name="sales_report_total_amount">Total amount : 6790 LKR</string>
     <string name="sales_report_commission">Commission : 1018.50 LKR</string>
     <string name="sales_report_show_yesterday">Show yesterday</string>
-  
+
+    <!-- login IT19208718 -->
+    <string name="login_welcome">Login to FreshFred</string>
+    <string name="login_nic">Enter your NIC number</string>
+    <string name="login_pwd">Enter the password</string>
+    <string name="login_btn">Login Now</string>
+
+
     <string name="Item_name">ITEM NAME</string>
     <string name="order_quantity">QUANTITY</string>
     <string name="order_address">ADDRESS</string>
@@ -114,7 +121,9 @@
     <string name="Supplier_name">vimal perera</string>
     <string name="Supplier_Name">supplier name</string>
     <string name="supplier_photo">supplier photo</string>
-
+    <string name="todo">TODO</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="update">Update</string>
 
 
 </resources>
