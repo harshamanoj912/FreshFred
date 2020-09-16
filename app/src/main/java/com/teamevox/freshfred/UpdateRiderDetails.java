@@ -2,19 +2,13 @@ package com.teamevox.freshfred;
 
 //IT19208718
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 
@@ -24,9 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.ui.addrider.Rider;
-import com.teamevox.freshfred.ui.rideraccount.RiderAccount;
 
 public class UpdateRiderDetails extends AppCompatActivity {
 
@@ -125,7 +117,7 @@ public class UpdateRiderDetails extends AppCompatActivity {
 
         if(!TextUtils.isEmpty(theRiderBikeNumber) || !TextUtils.isEmpty(theRiderNic) ||!TextUtils.isEmpty(theRiderMobile) || !TextUtils.isEmpty(theRiderName) || !TextUtils.isEmpty(theRiderCommission) || !TextUtils.isEmpty(theRiderPassword) ) //
         {
-            //String id = databaseRider.push().getKey();
+
             Rider rider = new Rider (theRiderName, theRiderMobile, theRiderBikeNumber, theRiderCommission, theRiderPassword, theRiderNic);
             databaseRider.child(theRiderNic).setValue(rider);
             Toast toast = Toast.makeText(this, "Updating", Toast.LENGTH_SHORT);
@@ -142,14 +134,14 @@ public class UpdateRiderDetails extends AppCompatActivity {
 
     public void getValues() {
 
+        GlobalClass global= ( (GlobalClass) getApplicationContext() );
 
-        databaseRider.addValueEventListener(new ValueEventListener() {
+        Query deleteQuery = databaseRider.orderByChild("riderNic").equalTo(global.getLoggedRiderNIC());
+
+        deleteQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot ) {
-
-                for(DataSnapshot riderSnapshot : snapshot.getChildren()){
-
-
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                for (DataSnapshot riderSnapshot: dataSnapshot.getChildren()) {
 
                     String name = riderSnapshot.child("riderName").getValue().toString();
                     String mobile = riderSnapshot.child("riderMobile").getValue().toString();
@@ -164,7 +156,6 @@ public class UpdateRiderDetails extends AppCompatActivity {
                     riderCommission11.setText(commission);
                     riderPassword11.setText(password);
                     riderNic11.setText(nic);
-
                 }
             }
 
@@ -172,7 +163,16 @@ public class UpdateRiderDetails extends AppCompatActivity {
             public void onCancelled(@NonNull DatabaseError error) {
 
             }
+
+
         });
+
+
+
+
+
+
+
 
     }
 }
