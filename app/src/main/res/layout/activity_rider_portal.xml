@@ -24,10 +24,10 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="212dp"
-        android:layout_height="103dp"
-        android:src="@drawable/default_picture"
+        android:id="@+id/loadRiderDP"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,65 +36,51 @@
         app:layout_constraintVertical_bias="0.188" />
 
     <Button
-        android:id="@+id/MyAccountRiderButton"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:background="@drawable/rounded_edittext"
-        android:text="@string/rider_profile_manage_account"
-        android:textColor="#0027FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
-
-    <Button
         android:id="@+id/OrdersForDistributionButton"
         android:layout_width="220dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:text="@string/rider_profile_order_for_distribution"
         android:textColor="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
-
-    <Button
-        android:id="@+id/DailySalesReportButton"
-        android:layout_width="220dp"
-        android:layout_height="50dp"
-        android:background="@drawable/rounded_edittext"
-        android:text="@string/rider_profile_daily_sales_report"
-        android:textColor="#0027FF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintVertical_bias="0.474" />
 
     <Button
         android:id="@+id/DistributedOrdersButton"
         android:layout_width="220dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:text="@string/rider_profile_distributed_orders"
         android:textColor="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintVertical_bias="0.717" />
+
+    <Button
+        android:id="@+id/MyAccountRiderButton"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:text="@string/rider_profile_manage_account"
+        android:textColor="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.822" />
 
     <Button
         android:id="@+id/riderLogOutButton"
         android:layout_width="220dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:text="@string/rider_profile_logout"
         android:textColor="#0027FF"
@@ -103,6 +89,20 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913" />
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
+        android:id="@+id/DailySalesReportButton"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:text="@string/rider_profile_daily_sales_report"
+        android:textColor="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
