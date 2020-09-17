@@ -1,30 +1,64 @@
 package com.teamevox.freshfred;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.teamevox.freshfred.ui.home.HomeFragment;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.teamevox.freshfred.GlobalClass;
+
+import java.io.File;
+import java.io.IOException;
 
 public class RiderPortal extends AppCompatActivity {
+
+    Button btn1, btn2, btn3, btn4, btn5 ;
+    ImageView loadRiderDP1;
+
+
+    FirebaseStorage theStorage = FirebaseStorage.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rider_portal);
 
-
-        Button btn1, btn2, btn3, btn4, btn5 ;
-
         btn1 = findViewById(R.id.OrdersForDistributionButton);
         btn2 = findViewById(R.id.DailySalesReportButton);
         btn3 = findViewById(R.id.DistributedOrdersButton);
         btn4 = findViewById(R.id.MyAccountRiderButton);
         btn5 = findViewById(R.id.riderLogOutButton);
+        loadRiderDP1 = findViewById(R.id.loadRiderDP);
+
+        //lad logedi user's image
+        GlobalClass global= ( (GlobalClass) getApplicationContext() );
+        StorageReference storageReference = theStorage.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("riders").child(global.getLoggedRiderNIC());
+
+
+        try {
+            final File file = File.createTempFile("img", "jpeg");
+            storageReference.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                    Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+                    loadRiderDP1.setImageBitmap(bitmap);
+                }
+            });
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,4 +107,11 @@ public class RiderPortal extends AppCompatActivity {
 
 
     }
+
+    public String getLoggedNic(){
+        GlobalClass global= ( (GlobalClass) getApplicationContext() );
+        return global.getLoggedRiderNIC();
+    }
+
+
 }
