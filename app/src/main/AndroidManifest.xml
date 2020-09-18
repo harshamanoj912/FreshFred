@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ggg"></activity>
         <activity android:name=".RiderPortal" />
         <activity android:name=".RiderLogin" />
         <activity android:name=".OrderRequest" />
