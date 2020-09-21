@@ -124,6 +124,8 @@
     <string name="todo">TODO</string>
     <string name="delete_account">Delete Account</string>
     <string name="update">Update</string>
+    
+    <string name="harsha">Harsha</string>
 
 
 </resources>
