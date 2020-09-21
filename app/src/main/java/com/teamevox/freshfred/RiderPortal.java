@@ -15,7 +15,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.teamevox.freshfred.GlobalClass;
 
 import java.io.File;
 import java.io.IOException;
@@ -108,10 +107,7 @@ public class RiderPortal extends AppCompatActivity {
 
     }
 
-    public String getLoggedNic(){
-        GlobalClass global= ( (GlobalClass) getApplicationContext() );
-        return global.getLoggedRiderNIC();
-    }
+
 
 
 }

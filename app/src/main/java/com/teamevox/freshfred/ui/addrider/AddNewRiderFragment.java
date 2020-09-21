@@ -97,7 +97,7 @@ public class AddNewRiderFragment extends Fragment {
 
 
 
-        if(!TextUtils.isEmpty(theRiderBikeNumber) ||!TextUtils.isEmpty(theRiderMobile) || !TextUtils.isEmpty(theRiderName) || !TextUtils.isEmpty(theRiderCommission) || !TextUtils.isEmpty(theRiderPassword) ) //
+        if(!TextUtils.isEmpty(theRiderBikeNumber) && !TextUtils.isEmpty(theRiderMobile) && !TextUtils.isEmpty(theRiderName) && !TextUtils.isEmpty(theRiderCommission) && !TextUtils.isEmpty(theRiderPassword) ) //
         {
 
             Rider rider = new Rider (theRiderName, theRiderMobile, theRiderBikeNumber, theRiderCommission, theRiderPassword,theRiderNic);
@@ -130,7 +130,7 @@ public class AddNewRiderFragment extends Fragment {
         if(requestCode == 1 && resultCode== Activity.RESULT_OK && data!=null && data.getData()!=null){
             imgUrl = data.getData();
             riderProfilePicture.setImageURI(imgUrl);
-            //
+
         }
     }
 

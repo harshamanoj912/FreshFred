@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ggg extends AppCompatActivity {
+public class SetNewRiderPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ggg);
+        setContentView(R.layout.activity_set_new_rider_password);
     }
 }

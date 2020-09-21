@@ -29,7 +29,7 @@
     <string name="rider_mobile_number">Mobile number</string>
     <string name="rider_bike_number">Bike number</string>
     <string name="rider_commission">Commission</string>
-    <string name="rider_default_password">Password</string>
+    <string name="rider_default_password">Password\n(Fixed)</string>
     <string name="rider_btn">Add now</string>
     <string name="rider_photo">Choose Photo</string>
     <string name="rider_nic">NIC Number</string>

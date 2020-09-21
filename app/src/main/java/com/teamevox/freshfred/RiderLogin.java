@@ -9,7 +9,12 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.FirebaseError;
+import com.google.firebase.FirebaseException;
+import com.google.firebase.FirebaseExceptionMapper;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,6 +27,7 @@ public class RiderLogin extends AppCompatActivity {
 
     EditText loginNic, loginPwd;
     Button loginBtn;
+    TextView riderForgotPwd;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
 
 
@@ -34,6 +40,15 @@ public class RiderLogin extends AppCompatActivity {
         loginNic =  findViewById(R.id.loginNic);
         loginPwd =  findViewById(R.id.loginPwd);
         loginBtn = findViewById(R.id.loginBTN);
+        riderForgotPwd = findViewById(R.id.riderForgotPwd);
+
+
+        riderForgotPwd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), RiderForgotPassword.class));
+            }
+        });
 
 
 
@@ -55,29 +70,40 @@ public class RiderLogin extends AppCompatActivity {
         final String enteredNic = loginNic.getText().toString();
         final String enteredPwd = loginPwd.getText().toString();
 
-        DatabaseReference databaseRider = database.getReference("riders").child(enteredNic);
 
-        if(TextUtils.isEmpty(enteredNic)|| TextUtils.isEmpty(enteredPwd) ){
-            fillAll();
-        }else {
+            DatabaseReference databaseRider = database.getReference("riders").child(enteredNic);
 
-            databaseRider.addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    String password = snapshot.child("riderPassword").getValue(String.class);
+            if(TextUtils.isEmpty(enteredNic)|| TextUtils.isEmpty(enteredPwd)){
+                fillAll();
+            }else {
 
-                    assert password != null;
-                    validateLogin(password, enteredPwd, enteredNic);
+                databaseRider.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String password = snapshot.child("riderPassword").getValue(String.class);
 
-                }
+                        assert password != null;
+                        validateLogin(password, enteredPwd, enteredNic);
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
+                    }
 
-                }
-            });
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
 
-        }
+                    }
+                });
+
+            }
+
+
+
+         //   Toast toast = Toast.makeText(this, "There is no account on this NIC" , Toast.LENGTH_SHORT);
+          //  toast.show();
+
+
+
+
+
     }
 
     public void validateLogin(String relaPwd, String entPwd , String nic){
@@ -89,7 +115,7 @@ public class RiderLogin extends AppCompatActivity {
             Toast toast = Toast.makeText(this, "Logged in as " + nic, Toast.LENGTH_SHORT);
             toast.show();
 
-            startActivity(new Intent(getActivity(), RiderPortal.class));
+            startActivity(new Intent(getApplicationContext(), RiderPortal.class));
 
             GlobalClass global= ( (GlobalClass) getApplicationContext() );
             global.setLoggedRiderNIC(nic);
@@ -97,7 +123,7 @@ public class RiderLogin extends AppCompatActivity {
 
 
         }else {
-            Toast toast = Toast.makeText(this, "Please check again", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(RiderLogin.this, "Please check again", Toast.LENGTH_SHORT);
             toast.show();
 
         }
