@@ -61,5 +61,10 @@
         android:name="com.teamevox.freshfred.SupplierInterface"
         android:label="activity_supplier_interface"
         tools:layout="@layout/activity_supplier_interface" />
+    <activity
+        android:id="@+id/supplierLogin"
+        android:name="com.teamevox.freshfred.SupplierLogin"
+        android:label="activity_supplier_login"
+        tools:layout="@layout/activity_supplier_login" />
 
 </navigation>

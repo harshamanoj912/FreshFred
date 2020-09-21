@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SetNewRiderPassword"></activity>
+        <activity android:name=".SupplierLogin"></activity>
+        <activity android:name=".SetNewRiderPassword" />
         <activity android:name=".RiderForgotPassword" />
         <activity android:name=".RiderPortal" />
         <activity android:name=".RiderLogin" />

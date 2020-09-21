@@ -21,7 +21,7 @@
     <item android:title="Supplier Section">
         <menu>
             <item
-                android:id="@+id/nav_supplier_account"
+                android:id="@+id/supplierLogin"
                 android:icon="@drawable/ic_bike"
                 android:title="@string/supplier_login" />
         </menu>
