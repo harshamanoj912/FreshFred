@@ -1,5 +1,8 @@
 package com.teamevox.freshfred.ui.addrider;
-//IT19208718 | Sraweera SMHM
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -7,17 +10,11 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -30,10 +27,9 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.teamevox.freshfred.R;
 
-import java.io.File;
 import java.util.UUID;
 
-public class AddNewRiderFragment extends Fragment {
+public class AddNewRider extends AppCompatActivity {
 
     EditText riderName1, riderMobile1, riderBikeNumber1, riderCommission1, riderPassword1, riderNic1;
     Button addNewRider1;
@@ -44,26 +40,23 @@ public class AddNewRiderFragment extends Fragment {
     StorageReference storageReference;
     DatabaseReference databaseRider;
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_add_new_rider);
 
-       View view = inflater.inflate(R.layout.fragment_add_new_rider, container, false);
-
-        riderName1= view.findViewById(R.id.riderName);
-        riderMobile1 = view.findViewById(R.id.riderMobile);
-        riderBikeNumber1= view.findViewById(R.id.riderBikeNumber);
-        riderCommission1 = view.findViewById(R.id.riderCommission);
-        riderPassword1 = view.findViewById(R.id.riderPassword);
-        addNewRider1 = view.findViewById(R.id.addNewRider);
-        riderNic1 = view.findViewById(R.id.riderNic);
-        riderProfilePicture = view.findViewById(R.id.riderProfilePicture);
+        riderName1= findViewById(R.id.riderName);
+        riderMobile1 = findViewById(R.id.riderMobile);
+        riderBikeNumber1= findViewById(R.id.riderBikeNumber);
+        riderCommission1 = findViewById(R.id.riderCommission);
+        riderPassword1 = findViewById(R.id.riderPassword);
+        addNewRider1 = findViewById(R.id.addNewRider);
+        riderNic1 = findViewById(R.id.riderNic);
+        riderProfilePicture = findViewById(R.id.riderProfilePicture);
 
         databaseRider = FirebaseDatabase.getInstance().getReference("riders");
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
-
-
 
         addNewRider1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,10 +73,13 @@ public class AddNewRiderFragment extends Fragment {
             }
         });
 
-        return view;
+
+
+
+
+
+
     }
-
-
 
     private void addRider(){
 
@@ -103,18 +99,19 @@ public class AddNewRiderFragment extends Fragment {
             Rider rider = new Rider (theRiderName, theRiderMobile, theRiderBikeNumber, theRiderCommission, theRiderPassword,theRiderNic);
             databaseRider.child(theRiderNic).setValue(rider);
             uploadPicture();
-            Toast toast = Toast.makeText(getContext(), "Adding New Rider", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Adding New Rider", Toast.LENGTH_SHORT);
             toast.show();
 
         }else {
 
-            Toast toast = Toast.makeText(getContext(), "Please fill all the fields..!", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, "Please fill all the fields..!", Toast.LENGTH_SHORT);
             toast.show();
         }
 
 
 
     }
+
 
     private void chooseProfilePicture() {
         Intent intent = new Intent();
@@ -136,7 +133,7 @@ public class AddNewRiderFragment extends Fragment {
 
     private void uploadPicture() {
 
-        final ProgressDialog progressDialog = new ProgressDialog(getContext());
+        final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading Image...");
         progressDialog.show();
         String theRiderNic = riderNic1.getText().toString();
@@ -151,14 +148,14 @@ public class AddNewRiderFragment extends Fragment {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         progressDialog.dismiss();
-                        Snackbar.make(getActivity().findViewById(android.R.id.content), "Rider Successfully Added", Snackbar.LENGTH_LONG).show();
+                        Snackbar.make(findViewById(android.R.id.content), "Rider Successfully Added", Snackbar.LENGTH_LONG).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception exception) {
                         progressDialog.dismiss();
-                        Toast.makeText(getContext(), "Failed to upload..!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Failed to upload..!", Toast.LENGTH_SHORT).show();
                     }
                 })
 
@@ -176,4 +173,6 @@ public class AddNewRiderFragment extends Fragment {
 
 
     }
+
+
 }

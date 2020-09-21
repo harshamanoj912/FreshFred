@@ -43,23 +43,15 @@
     </item>
 
 
-    <item android:title="Admin Panel">
+    <item android:title="@string/owner">
 
         <menu>
 
             <item
-                android:id="@+id/nav_add_food"
+                android:id="@+id/ownerLogin"
                 android:icon="@drawable/ic_food"
-                android:title="@string/menu_add_food" />
-            <item
-                android:id="@+id/nav_request_supply"
-                android:icon="@drawable/ic_supply"
-                android:title="@string/menu_request_supply" />
+                android:title="@string/owner_login" />
 
-            <item
-                android:id="@+id/nav_add_new_rider"
-                android:icon="@drawable/ic_bike"
-                android:title="@string/menu_add_rider" />
 
 
         </menu>

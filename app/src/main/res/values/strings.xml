@@ -125,6 +125,8 @@
     <string name="delete_account">Delete Account</string>
     <string name="update">Update</string>
     <string name="supplier_login">Supplier Login</string>
+    <string name="owner_login">Owner Login</string>
+    <string name="owner">Owner</string>
 
 
 </resources>

@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SupplierLogin"></activity>
+        <activity android:name=".ui.addrider.AddNewRider"></activity>
+        <activity android:name=".OwnerLogin" />
+        <activity android:name=".SupplierLogin" />
         <activity android:name=".SetNewRiderPassword" />
         <activity android:name=".RiderForgotPassword" />
         <activity android:name=".RiderPortal" />
