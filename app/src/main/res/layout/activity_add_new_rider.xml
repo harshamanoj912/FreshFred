@@ -4,46 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.addrider.AddNewRider"
-    android:background="@drawable/bg">
+    tools:context=".IT19208718.AddNewRider"
+    android:background="@drawable/add_new_rider_bg">
 
-
-    <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/amarante"
-        android:text="@string/add_new_rider"
-        android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
 
     <EditText
-        android:id="@+id/riderName"
-        android:layout_width="296dp"
+        android:id="@+id/riderPassword"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="@string/rider_name"
+        android:hint="Password"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        android:textColor="#3F51B5"
+        android:textColor="#B53F3F"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149"
+        app:layout_constraintVertical_bias="0.898"
         tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/riderBikeNumber"
-        android:layout_width="296dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:hint="@string/rider_bike_number"
@@ -54,18 +40,18 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433"
+        app:layout_constraintVertical_bias="0.712"
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/riderNic"
-        android:layout_width="296dp"
+        android:id="@+id/riderName"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="@string/rider_nic"
+        android:hint="@string/rider_name"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:textColor="#3F51B5"
@@ -73,15 +59,15 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243"
+        app:layout_constraintVertical_bias="0.424"
         tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/riderCommission"
-        android:layout_width="296dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:hint="@string/rider_commission"
@@ -92,34 +78,34 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.527"
+        app:layout_constraintVertical_bias="0.804"
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/riderPassword"
-        android:layout_width="296dp"
+        android:id="@+id/riderNic"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="@string/rider_default_password"
+        android:hint="@string/rider_nic"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        android:textColor="#B53F3F"
+        android:textColor="#3F51B5"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621"
+        app:layout_constraintVertical_bias="0.522"
         tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/riderMobile"
-        android:layout_width="296dp"
+        android:layout_width="180dp"
         android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:hint="@string/rider_mobile_number"
@@ -130,51 +116,54 @@
         android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337"
+        app:layout_constraintVertical_bias="0.614"
         tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/addNewRider"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:text="@string/rider_btn"
         android:textColor="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="0.896" />
 
     <ImageView
         android:id="@+id/riderProfilePicture"
         android:layout_width="100dp"
         android:layout_height="100dp"
-
         android:background="#A1FFFFFF"
+        android:src="@drawable/choose_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintVertical_bias="0.735" />
 
     <TextView
         android:id="@+id/riderMobileUpdated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:width="100dp"
         android:fontFamily="@font/amarante"
-        android:text="Select a profile\npicture"
-        android:textColor="#FFFFFF"
+        android:text="Choose a \nPhoto"
+        android:textAlignment="center"
+        android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.768" />
+        app:layout_constraintVertical_bias="0.533" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

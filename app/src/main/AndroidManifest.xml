@@ -5,38 +5,60 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".GlobalClass"
+        android:name=".IT19208718.GlobalClass"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.addrider.AddNewRider"></activity>
-        <activity android:name=".OwnerLogin" />
-        <activity android:name=".SupplierLogin" />
-        <activity android:name=".SetNewRiderPassword" />
-        <activity android:name=".RiderForgotPassword" />
-        <activity android:name=".RiderPortal" />
-        <activity android:name=".RiderLogin" />
-        <activity android:name=".OrderRequest" />
-        <activity android:name=".UpdateSupplierDetails" />
-        <activity android:name=".SupplierInterface" />
-        <activity android:name=".AddNewSupplier" />
-        <activity android:name=".SampleOrdersForDistributing" />
-        <activity android:name=".DailySalesReport" />
-        <activity android:name=".DistributedOrders" />
-        <activity android:name=".OrdersForDistribution" />
-        <activity android:name=".UpdateRiderDetails" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".IT19208718.MainLogin" android:label="Welcome to FreshFred">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+
+        <activity android:name=".IT19207650.OrderList" />
+        <activity
+            android:name=".IT19208718.OrdersForDistribution"
+            android:label="Order Queue" />
+        <activity
+            android:name=".IT19208718.AddNewRider"
+            android:label="Adding New Rider" />
+        <activity
+            android:name=".IT19208718.OwnerPortal"
+            android:label="Welcome Boss" />
+        <activity
+            android:name=".IT19208718.SetNewPassword"
+            android:label="Set New Password" />
+        <activity
+            android:name=".IT19208718.ForgotPassword"
+            android:label="Find Your Account" />
+        <activity
+            android:name=".IT19208718.RiderPortal"
+            android:label="Hello Rider" />
+        <activity android:name=".IT19216492.OrderRequest" />
+        <activity android:name=".IT19216492.UpdateSupplierDetails" />
+        <activity android:name=".IT19216492.SupplierPortal" />
+        <activity android:name=".IT19216492.AddNewSupplier" />
+        <activity
+            android:name=".IT19208718.DailySalesReport"
+            android:label="Daily Sales Report" />
+        <activity
+            android:name=".IT19208718.DistributedOrders"
+            android:label="Delivered Summary" />
+        <activity
+            android:name=".IT19208718.UpdateRiderDetails"
+            android:label="Update Details" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
         </activity>
 
         <meta-data
