@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DailySalesReport"
+    tools:context=".IT19208718.DailySalesReport"
     android:background="@drawable/bg">
 
     <TextView

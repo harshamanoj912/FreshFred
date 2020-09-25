@@ -128,7 +128,7 @@
     <string name="owner_login">Owner Login</string>
     <string name="owner">Owner</string>
 
-    <string name = "harsha">harsha1</string>
-    <string name = "harsha2">harsha2</string>
-    
+    <string name="harsha">harsha1</string>
+    <string name="harsha2">harsha2</string>
+
 </resources>
