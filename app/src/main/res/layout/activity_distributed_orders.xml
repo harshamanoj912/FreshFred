@@ -1,121 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- IT19208718 S.M.H.M.Suraweera -->
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IT19208718.DistributedOrders"
-    android:orientation="vertical"
-    android:background="@drawable/bg" >
+    android:background="@drawable/delivery_boy_order_list_bg">
 
-    <LinearLayout
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/distributedORidersByRidersResView"
         android:layout_width="match_parent"
-        android:layout_height="70dp">
+        android:layout_height="431dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-
-        <TextView
-            android:id="@+id/ordersForDistribution"
-            android:layout_width="match_parent"
-            android:layout_height="84dp"
-            android:fontFamily="@font/amarante"
-            android:paddingTop="10dp"
-            android:text="@string/distributed_orders_welcome"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="36sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.029" />
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="@string/distributed_orders_food_name"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="@string/distributed_orders_food_quantity"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="@string/distributed_orders_food_price"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:text="@string/distributed_orders_mobile"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="@string/distributed_orders_address"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20dp" />
-
-
-
-
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

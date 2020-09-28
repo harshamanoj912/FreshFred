@@ -22,7 +22,7 @@ import java.io.IOException;
 
 public class RiderPortal extends AppCompatActivity {
 
-    Button btn1, btn2, btn3, btn4, btn5 ;
+    Button btn1, btn2, btn3, btn4, btn5, btn6 ;
     ImageView loadRiderDP1;
 
 
@@ -35,13 +35,14 @@ public class RiderPortal extends AppCompatActivity {
         setContentView(R.layout.activity_rider_portal);
 
         btn1 = findViewById(R.id.OrdersForDistributionButton);
-        btn2 = findViewById(R.id.DailySalesReportButton);
+        btn2 = findViewById(R.id.earningHistory);
         btn3 = findViewById(R.id.DistributedOrdersButton);
         btn4 = findViewById(R.id.MyAccountRiderButton);
         btn5 = findViewById(R.id.riderLogOutButton);
+        btn6 = findViewById(R.id.assignedOrdersForMe);
         loadRiderDP1 = findViewById(R.id.loadRiderDP);
 
-        //lad logedi user's image
+        //lad logged user's image
         GlobalClass global= ( (GlobalClass) getApplicationContext() );
         StorageReference storageReference = theStorage.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("riders").child(global.getLoggedRiderUsername());
 
@@ -72,7 +73,7 @@ public class RiderPortal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getBaseContext(), DailySalesReport.class));
+                startActivity(new Intent(getBaseContext(), RiderEarningHistory.class));
             }
         });
 
@@ -101,7 +102,13 @@ public class RiderPortal extends AppCompatActivity {
             }
         });
 
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                startActivity(new Intent(getBaseContext(), AssignedOrdersForRiders.class));
+            }
+        });
 
 
 
