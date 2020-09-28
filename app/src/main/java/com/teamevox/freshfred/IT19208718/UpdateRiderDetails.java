@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -136,11 +137,45 @@ public class UpdateRiderDetails extends AppCompatActivity {
                 }
             });
 
+            FirebaseStorage storage;
+            StorageReference storageReference;
+            storage = FirebaseStorage.getInstance();
+            storageReference = storage.getReference();
+            StorageReference photoRef = storageReference.child("riders/" + riderNicForDelete);
+
+
+        photoRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+
+            }
+        });
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
         }else {
 
             Toast toast = Toast.makeText(this, "Please fill all the fields..!", Toast.LENGTH_SHORT);
             toast.show();
         }
+        
+        
 
     }
 

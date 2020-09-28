@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".ui.IT19213972.FoodHome">
+    tools:context=".IT19213972.FoodHome">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RV_01"
