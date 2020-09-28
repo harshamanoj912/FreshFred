@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.common.net.InternetDomainName;
 import com.google.firebase.database.DatabaseReference;
@@ -35,7 +36,7 @@ public class AddNewFood extends AppCompatActivity {
     EditText editTextFoodName, editTextFoodDes,editTextFoodPrice;
     Button buttonaddFood;
     ImageView foodProfilePicture;
-
+    String url;
     public Uri imgUrlll;
     FirebaseStorage storage;
     StorageReference storageReference67;
@@ -89,8 +90,10 @@ public class AddNewFood extends AppCompatActivity {
        int tempFoodID = r.nextInt(high-low) + low;
        String foodID = String.valueOf(tempFoodID);
 
-        Food food = new Food(foodID,foodName,foodDes,foodPrice) ;
-       uploadPicture(foodID);
+       //pass the uploaded image's URI on here,otherwise it will not loads 
+
+        Food food = new Food(foodID,foodName,foodDes,foodPrice, String.valueOf("https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F42489?alt=media&token=7aff2885-183c-4deb-bf53-92e8f029ec45")) ;
+        uploadPicture(foodID);
 
         databaseFoods.child(foodID).setValue(food);
 
@@ -126,6 +129,8 @@ public class AddNewFood extends AppCompatActivity {
 
         StorageReference foodRef = storageReference67.child("foods/" + foodID);
 
+
+
         foodRef.putFile(imgUrlll)
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
@@ -151,6 +156,11 @@ public class AddNewFood extends AppCompatActivity {
                 });
 
 
+    }
+
+
+    public void setUrl(String url){
+        this.url = url;
     }
 
 
