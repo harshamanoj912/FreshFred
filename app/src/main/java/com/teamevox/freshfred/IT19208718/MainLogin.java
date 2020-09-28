@@ -20,14 +20,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.teamevox.freshfred.HomeFragment;
+import com.teamevox.freshfred.IT19213972.CustomerRegister;
+import com.teamevox.freshfred.IT19213972.FoodHome;
 import com.teamevox.freshfred.IT19216492.SupplierPortal;
 import com.teamevox.freshfred.R;
 
 public class MainLogin extends AppCompatActivity {
 
     EditText usernameEditText, passwordEditText;
-    Button loginButton;
+    Button loginButton, registerButton;
     TextView forgotPassword;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
 
@@ -41,6 +42,7 @@ public class MainLogin extends AppCompatActivity {
         passwordEditText = findViewById(R.id.loginPassword);
         loginButton = findViewById(R.id.loginButton);
         forgotPassword = findViewById(R.id.forgotPassword);
+        registerButton = findViewById(R.id.registerButton);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +61,13 @@ public class MainLogin extends AppCompatActivity {
                     checkUserType(username, password);
                 }
 
+            }
+        });
+
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), CustomerRegister.class));
             }
         });
 
@@ -126,7 +135,7 @@ public class MainLogin extends AppCompatActivity {
 
                                         if (snapshot.exists()){
 
-                                            String correctPassword = snapshot.child("password").getValue(String.class);
+                                            String correctPassword = snapshot.child("ownerPassword").getValue(String.class);
                                             String userType = "owner";
                                             assert correctPassword != null;
                                             validateLogin(correctPassword, password, username, userType);
@@ -141,7 +150,7 @@ public class MainLogin extends AppCompatActivity {
 
                                                     if (snapshot.exists()){
 
-                                                        String correctPassword = snapshot.child("password").getValue(String.class);
+                                                        String correctPassword = snapshot.child("customerPassword").getValue(String.class);
                                                         String userType = "customer";
                                                         assert correctPassword != null;
                                                         validateLogin(correctPassword, password, username, userType);
@@ -222,7 +231,7 @@ public class MainLogin extends AppCompatActivity {
                                 global.setGetLoggedSupplierUsername(enteredUsername);
                                 break;
 
-            case "customer":    startActivity(new Intent(getApplicationContext(), HomeFragment.class));
+            case "customer":    startActivity(new Intent(getApplicationContext(), FoodHome.class));
                                 global.setGetLoggedCustomerUsername(enteredUsername);
                                 break;
 

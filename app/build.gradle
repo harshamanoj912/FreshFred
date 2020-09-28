@@ -58,5 +58,14 @@ dependencies {
 
     implementation 'com.firebaseui:firebase-ui-database:6.3.0'
 
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //sanduni
+
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
 
 }

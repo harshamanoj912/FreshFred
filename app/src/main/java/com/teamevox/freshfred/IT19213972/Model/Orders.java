@@ -1,21 +1,20 @@
-package com.teamevox.freshfred.IT19208718;
+//IT19213972-----------I.K.S.S.Nawarathne
+package com.teamevox.freshfred.IT19213972.Model;
 
-public class OrderListDisplayForRiderModel {
+public class Orders {
 
-    public String address, customerName, foodName, mobileNumber, orderId, totalPrice;
+    private String address , customerName , foodName , mobileNumber , orderId , totalPrice;
 
-    public OrderListDisplayForRiderModel() {
-
-    }
-
-    public OrderListDisplayForRiderModel( String customerName, String address,String foodName, String mobileNumber, String orderId, String totalPrice) {
+    public Orders(String address, String customerName, String foodName, String mobileNumber, String orderId, String totalPrice) {
         this.address = address;
         this.customerName = customerName;
         this.foodName = foodName;
         this.mobileNumber = mobileNumber;
         this.orderId = orderId;
         this.totalPrice = totalPrice;
+    }
 
+    public Orders() {
     }
 
     public String getAddress() {

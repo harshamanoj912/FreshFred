@@ -14,7 +14,7 @@ import com.teamevox.freshfred.R;
 
 public class OrdersForDistribution extends AppCompatActivity {
 
-    RecyclerView orderListRecyclerView;
+    private RecyclerView orderListRecyclerView;
     OrderListDisplayForRiderAdapter adapter;
 
 
@@ -33,9 +33,9 @@ public class OrdersForDistribution extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("orders"), OrderListDisplayForRiderModel.class)
                         .build();
 
+        GlobalClass global= ( (GlobalClass) getApplicationContext() );
 
-
-        adapter = new OrderListDisplayForRiderAdapter(options);
+        adapter = new OrderListDisplayForRiderAdapter(options, global.getLoggedRiderUsername());
         orderListRecyclerView.setAdapter(adapter);
 
 

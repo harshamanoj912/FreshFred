@@ -9,13 +9,14 @@ import android.view.View;
 import android.widget.Button;
 
 import com.teamevox.freshfred.IT19207650.OrderList;
+import com.teamevox.freshfred.IT19207650.AddNewFood;
 import com.teamevox.freshfred.R;
 
 public class OwnerPortal extends AppCompatActivity {
 
 
     //get Your button via ID
-    Button addNewRiderBtn, addNewSupplierBtn, addNewFoodsBtn, orderList;
+    Button addNewRiderBtn, addNewSupplierBtn, addNewFoodsBtn, orderList, manageRiders;
 
 
     @Override
@@ -27,7 +28,8 @@ public class OwnerPortal extends AppCompatActivity {
 
         addNewRiderBtn = findViewById(R.id.addNewRiderBtn);
         orderList = findViewById(R.id.orderList4);
-
+        manageRiders = findViewById(R.id.manageRiders);
+        addNewFoodsBtn = findViewById(R.id.addNewFoodsBtn);
 
         //Set new onClickListener like this
 
@@ -46,9 +48,20 @@ public class OwnerPortal extends AppCompatActivity {
             }
         });
 
+        manageRiders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), ManageRiders.class));
+            }
+        });
 
 
-
+        addNewFoodsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AddNewFood.class));
+            }
+        });
 
     }
 }

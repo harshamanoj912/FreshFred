@@ -7,6 +7,15 @@ public class GlobalClass extends Application {
     private String loggedRiderUsername, loggedOwnerUsername, loggedSupplierUsername, loggedCustomerUsername;
     private String resetPasswordUserType;
     private String resetPasswordNIC, resetPasswordMobile;
+    private String newRiderCommission;
+
+    public String getNewRiderCommission() {
+        return newRiderCommission;
+    }
+
+    public void setNewRiderCommission(String newRiderCommission) {
+        this.newRiderCommission = newRiderCommission;
+    }
 
     public String getLoggedRiderUsername() {
         return loggedRiderUsername;
