@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.IT19213972.Cart">
+    tools:context=".IT19213972.Cart">
 
     <RelativeLayout
         android:id="@+id/relative"

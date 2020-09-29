@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.teamevox.freshfred.IT19213972.Interface.ItemClickListner;
 import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.IT19213972.Interface.ItemClickListner;
 
