@@ -11,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.teamevox.freshfred.IT19208718.GlobalClass;
 import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.IT19213972.Model.Food;
 import com.teamevox.freshfred.IT19213972.ViewHolder.FoodViewHolder;
@@ -39,8 +38,7 @@ public class FoodHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_home);
 
-        GlobalClass global= ( (GlobalClass) getApplicationContext() );
-        key = global.getGetLoggedCustomerUsername();
+        key = "974529412V";
 
         if(key.isEmpty()){
             key = getIntent().getStringExtra("key");

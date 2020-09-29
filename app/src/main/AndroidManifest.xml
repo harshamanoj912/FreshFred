@@ -14,12 +14,14 @@
         android:theme="@style/AppTheme">
         <activity android:name=".IT19208718.AssignedOrdersForRiders" />
         <activity android:name=".IT19207650.AddNewFood" />
+
         <activity android:name=".IT19213972.CustomerRegister"/>
         <activity android:name=".IT19213972.ConfirmOrder" />
         <activity android:name=".IT19213972.Cart" />
         <activity android:name=".IT19213972.FoodDetails" />
         <activity android:name=".IT19213972.EditOrder" />
         <activity android:name=".IT19213972.FoodHome"/>
+
 
         <activity
             android:name=".IT19208718.ManageRiders"
