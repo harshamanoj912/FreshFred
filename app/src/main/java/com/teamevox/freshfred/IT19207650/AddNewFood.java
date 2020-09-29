@@ -15,32 +15,36 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.common.net.InternetDomainName;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.google.protobuf.StringValue;
 import com.teamevox.freshfred.R;
 
+import java.util.Objects;
 import java.util.Random;
+
 
 public class AddNewFood extends AppCompatActivity {
 
     EditText editTextFoodName, editTextFoodDes,editTextFoodPrice;
     Button buttonaddFood;
     ImageView foodProfilePicture;
-    String url;
+    String url ;
+    String image_link;
     public Uri imgUrlll;
     FirebaseStorage storage;
     StorageReference storageReference67;
     DatabaseReference  databaseFoods ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,16 +88,17 @@ public class AddNewFood extends AppCompatActivity {
         String foodDes = editTextFoodPrice.getText().toString();
         String foodPrice = editTextFoodPrice.getText().toString();
 
-       Random r = new Random();
-       int low = 10000;
-       int high = 100000;
-       int tempFoodID = r.nextInt(high-low) + low;
-       String foodID = String.valueOf(tempFoodID);
+        Random r = new Random();
+        int low = 10000;
+        int high = 100000;
+        int tempFoodID = r.nextInt(high-low) + low;
+        String foodID = String.valueOf(tempFoodID);
 
-       //pass the uploaded image's URI on here,otherwise it will not loads 
+        //pass the uploaded image's URI on here,otherwise it will not loads
 
-        Food food = new Food(foodID,foodName,foodDes,foodPrice, String.valueOf("https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F42489?alt=media&token=7aff2885-183c-4deb-bf53-92e8f029ec45")) ;
         uploadPicture(foodID);
+        Food food = new Food(foodID,foodName,foodDes,foodPrice, "dh" ) ;
+
 
         databaseFoods.child(foodID).setValue(food);
 
@@ -119,7 +124,7 @@ public class AddNewFood extends AppCompatActivity {
         }
     }
 
-    private void uploadPicture(String foodID) {
+    private void uploadPicture(final String foodID) {
 
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading Image...");
@@ -127,16 +132,41 @@ public class AddNewFood extends AppCompatActivity {
 
 
 
-        StorageReference foodRef = storageReference67.child("foods/" + foodID);
+        final StorageReference foodRef = storageReference67.child("foods/" + foodID);
 
+        final UploadTask uploadTask = foodRef.putFile(imgUrlll);
 
-
-        foodRef.putFile(imgUrlll)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        uploadTask.addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         progressDialog.dismiss();
                         Snackbar.make(findViewById(android.R.id.content), "food Successfully Added", Snackbar.LENGTH_LONG).show();
+
+                        Task<Uri> uriTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                            @Override
+                            public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
+                                if(!task.isSuccessful()){
+                                    throw Objects.requireNonNull(task.getException());
+
+                                }
+
+                                image_link = foodRef.getDownloadUrl().toString();
+                                return foodRef.getDownloadUrl();
+
+
+                            }
+                        }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Uri> task) {
+                                if(task.isSuccessful()){
+
+                                    image_link = Objects.requireNonNull(task.getResult()).toString();
+
+                                    databaseFoods.child(foodID).child("foodImage").setValue(image_link);
+                                }
+
+                            }
+                        });
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -156,11 +186,8 @@ public class AddNewFood extends AppCompatActivity {
                 });
 
 
-    }
 
 
-    public void setUrl(String url){
-        this.url = url;
     }
 
 
