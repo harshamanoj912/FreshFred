@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.teamevox.freshfred.R;
@@ -18,6 +20,7 @@ public class SetNewPassword extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     EditText newPassword;
     Button resetNow, backToLogin;
+    private AwesomeValidation awesomeValidation11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +36,9 @@ public class SetNewPassword extends AppCompatActivity {
         final String resetPasswordNic = global.getResetPasswordNIC();
         final String resetPasswordUserType = global.getResetPasswordUserType();
 
+        awesomeValidation11 = new AwesomeValidation(ValidationStyle.BASIC);
 
-
-
+        awesomeValidation11.addValidation(this, R.id.newPassword, "^[0-9A-z]{6}$", R.string.pwdError1);
 
 
 
@@ -44,7 +47,11 @@ public class SetNewPassword extends AppCompatActivity {
             public void onClick(View view) {
 
                 final String newPasswordValue = newPassword.getText().toString();
-                resetPassword(resetPasswordNic, newPasswordValue, resetPasswordUserType);
+
+                if (awesomeValidation11.validate()){
+                    resetPassword(resetPasswordNic, newPasswordValue, resetPasswordUserType);
+                }
+
 
 
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IT19208718.AssignedOrdersForRiders"
-    android:background="@drawable/delivery_boy_order_list_bg">
+    android:background="@drawable/assigned_orders_bg">
 
 
 
@@ -14,9 +14,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/assignedOrdersForMeRider"
         android:layout_width="match_parent"
-        android:layout_height="431dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.026"

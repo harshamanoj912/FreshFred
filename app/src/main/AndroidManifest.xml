@@ -12,28 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".IT19208718.TodayIncomeForShop"
+            android:label="Total Income" />
         <activity android:name=".IT19208718.AssignedOrdersForRiders" />
         <activity android:name=".IT19207650.AddNewFood" />
-
-        <activity android:name=".IT19213972.CustomerRegister"/>
+        <activity android:name=".IT19213972.CustomerRegister" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".IT19213972.ConfirmOrder" />
         <activity android:name=".IT19213972.Cart" />
         <activity android:name=".IT19213972.FoodDetails" />
         <activity android:name=".IT19213972.EditOrder" />
-        <activity android:name=".IT19213972.FoodHome"/>
-
-
+        <activity android:name=".IT19213972.FoodHome" />
         <activity
             android:name=".IT19208718.ManageRiders"
             android:label="Manage Your Riders" />
         <activity
             android:name=".IT19208718.MainLogin"
-            android:label="Welcome to FreshFred">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".IT19208718.OrdersForDistribution"
@@ -73,6 +70,14 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".IT19216492.AppStart"  android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

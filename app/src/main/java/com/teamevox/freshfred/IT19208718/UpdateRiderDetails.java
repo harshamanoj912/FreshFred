@@ -17,6 +17,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -41,6 +43,7 @@ public class UpdateRiderDetails extends AppCompatActivity {
     Button updateButton11, deleteRiderAccount1;
     ImageView riderProfilePictureUpdated1;
     public Uri imgUrl1;
+    private AwesomeValidation awesomeValidation5;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference databaseRider = database.getReference("riders");
@@ -68,6 +71,11 @@ public class UpdateRiderDetails extends AppCompatActivity {
         storage1 = FirebaseStorage.getInstance();
         storageReference1 = storage1.getReference();
 
+        awesomeValidation5 = new AwesomeValidation(ValidationStyle.BASIC);
+
+        awesomeValidation5.addValidation(this, R.id.riderNameUP, "^[A-Za-z]{3,}$", R.string.nameError1);
+        awesomeValidation5.addValidation(this, R.id.riderMobileUP, "^[0-9]{10}$", R.string.mobileError1);
+        awesomeValidation5.addValidation(this, R.id.riderBikeNumberUP, "^[A-Z]{2,3}[-][0-9]{4}$", R.string.bikeNumbError1);
 
         GlobalClass global= ( (GlobalClass) getApplicationContext() );
         StorageReference storageReference = storage1.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("riders").child(global.getLoggedRiderUsername());
@@ -91,13 +99,19 @@ public class UpdateRiderDetails extends AppCompatActivity {
         getValues();
 
 
+
         updateButton11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                updateRiderDetails();
+                if (awesomeValidation5.validate()){
+                    updateRiderDetails();
+                }
             }
         });
+
+
+
+
 
         deleteRiderAccount1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,37 +151,7 @@ public class UpdateRiderDetails extends AppCompatActivity {
                 }
             });
 
-            FirebaseStorage storage;
-            StorageReference storageReference;
-            storage = FirebaseStorage.getInstance();
-            storageReference = storage.getReference();
-            StorageReference photoRef = storageReference.child("riders/" + riderNicForDelete);
 
-
-        photoRef.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception exception) {
-
-            }
-        });
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
 
         }else {
 
@@ -190,8 +174,7 @@ public class UpdateRiderDetails extends AppCompatActivity {
         String theRiderNic = riderNic11.getText().toString();
 
 
-        if(!TextUtils.isEmpty(theRiderBikeNumber) && !TextUtils.isEmpty(theRiderNic) && !TextUtils.isEmpty(theRiderMobile) && !TextUtils.isEmpty(theRiderName) && !TextUtils.isEmpty(theRiderCommission) && !TextUtils.isEmpty(theRiderPassword) ) //
-        {
+
 
             Rider rider = new Rider (theRiderName, theRiderMobile, theRiderBikeNumber, theRiderCommission, theRiderPassword, theRiderNic);
             databaseRider.child(theRiderNic).setValue(rider);
@@ -201,11 +184,7 @@ public class UpdateRiderDetails extends AppCompatActivity {
 
 
 
-        }else {
 
-            Toast toast = Toast.makeText(this, "Please fill all the fields..!", Toast.LENGTH_SHORT);
-            toast.show();
-        }
 
 
     }

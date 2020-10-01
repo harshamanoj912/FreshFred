@@ -85,7 +85,7 @@ public class AddNewFood extends AppCompatActivity {
     private void addFood() {
 
         String foodName = editTextFoodName.getText().toString();
-        String foodDes = editTextFoodPrice.getText().toString();
+        String foodDes = editTextFoodDes.getText().toString();
         String foodPrice = editTextFoodPrice.getText().toString();
 
         Random r = new Random();
