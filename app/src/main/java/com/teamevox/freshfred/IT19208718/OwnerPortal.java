@@ -7,16 +7,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.teamevox.freshfred.IT19207650.OrderList;
 import com.teamevox.freshfred.IT19207650.AddNewFood;
 import com.teamevox.freshfred.R;
+import com.teamevox.freshfred.IT19208718.TodayIncomeForShop;
 
 public class OwnerPortal extends AppCompatActivity {
 
 
     //get Your button via ID
-    Button addNewRiderBtn, addNewSupplierBtn, addNewFoodsBtn, orderList, manageRiders;
+    Button addNewRiderBtn, addNewSupplierBtn, addNewFoodsBtn, orderList, manageRiders, ownerLogout, todayIncome;
 
 
     @Override
@@ -25,11 +27,13 @@ public class OwnerPortal extends AppCompatActivity {
         setContentView(R.layout.activity_owner_portal);
 
         //findViewById
-
+        final GlobalClass global= ( (GlobalClass) getApplicationContext() );
         addNewRiderBtn = findViewById(R.id.addNewRiderBtn);
         orderList = findViewById(R.id.orderList4);
         manageRiders = findViewById(R.id.manageRiders);
         addNewFoodsBtn = findViewById(R.id.addNewFoodsBtn);
+        ownerLogout = findViewById(R.id.ownerLogout);
+        todayIncome = findViewById(R.id.todayIncome);
 
         //Set new onClickListener like this
 
@@ -60,6 +64,23 @@ public class OwnerPortal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), AddNewFood.class));
+            }
+        });
+
+        ownerLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Logging Out", Toast.LENGTH_SHORT).show();
+                global.setLoggedRiderUsername(null);
+
+                startActivity(new Intent(getApplicationContext(), MainLogin.class));
+            }
+        });
+
+        todayIncome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), TodayIncomeForShop.class));
             }
         });
 

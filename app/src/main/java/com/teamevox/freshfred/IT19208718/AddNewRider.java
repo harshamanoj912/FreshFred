@@ -10,15 +10,19 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.common.collect.Range;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -32,19 +36,20 @@ public class AddNewRider extends AppCompatActivity {
     EditText riderName1, riderMobile1, riderBikeNumber1, riderCommission1, riderPassword1, riderNic1;
     Button addNewRider1;
     ImageView riderProfilePicture;
+    private AwesomeValidation awesomeValidation;
 
     public Uri imgUrl;
     FirebaseStorage storage;
     StorageReference storageReference;
     DatabaseReference databaseRider;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_rider);
+
+
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
         riderName1= findViewById(R.id.riderName);
         riderMobile1 = findViewById(R.id.riderMobile);
@@ -59,11 +64,25 @@ public class AddNewRider extends AppCompatActivity {
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
 
+
+
+        awesomeValidation.addValidation(this, R.id.riderName, "^[A-Za-z]{3,}$", R.string.nameError1);
+        awesomeValidation.addValidation(this, R.id.riderNic, "^[0-9]{9}[V]$", R.string.nicError1);
+        awesomeValidation.addValidation(this, R.id.riderMobile, "^[0-9]{10}$", R.string.mobileError1);
+        awesomeValidation.addValidation(this, R.id.riderBikeNumber, "^[A-Z]{2,3}[-][0-9]{4}$", R.string.bikeNumbError1);
+        awesomeValidation.addValidation(this, R.id.riderCommission, "^[0-9][0-9]$", R.string.commError1);
+        awesomeValidation.addValidation(this, R.id.riderPassword, "^[0-9A-z]{6}$", R.string.pwdError1);
+
+
+
         addNewRider1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                addRider();
+                if (awesomeValidation.validate()){
+                    addRider();
+                }
+
             }
         });
 
@@ -87,23 +106,11 @@ public class AddNewRider extends AppCompatActivity {
         String theRiderNic = riderNic1.getText().toString();
 
 
-
-
-        if(!TextUtils.isEmpty(theRiderBikeNumber) && !TextUtils.isEmpty(theRiderMobile) && !TextUtils.isEmpty(theRiderName) && !TextUtils.isEmpty(theRiderCommission) && !TextUtils.isEmpty(theRiderPassword) ) //
-        {
-
             Rider rider = new Rider (theRiderName, theRiderMobile, theRiderBikeNumber, theRiderCommission, theRiderPassword,theRiderNic);
             databaseRider.child(theRiderNic).setValue(rider);
             uploadPicture();
             Toast toast = Toast.makeText(this, "Adding New Rider", Toast.LENGTH_SHORT);
             toast.show();
-
-        }else {
-
-            Toast toast = Toast.makeText(this, "Please fill all the fields..!", Toast.LENGTH_SHORT);
-            toast.show();
-        }
-
 
 
     }
@@ -169,6 +176,9 @@ public class AddNewRider extends AppCompatActivity {
 
 
     }
+
+
+
 
 
 }

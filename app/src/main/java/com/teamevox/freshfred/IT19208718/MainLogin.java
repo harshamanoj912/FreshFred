@@ -15,6 +15,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,6 +33,7 @@ public class MainLogin extends AppCompatActivity {
     Button loginButton, registerButton;
     TextView forgotPassword;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    private AwesomeValidation awesomeValidation1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,13 @@ public class MainLogin extends AppCompatActivity {
         forgotPassword = findViewById(R.id.forgotPassword);
         registerButton = findViewById(R.id.registerButton);
 
+        awesomeValidation1 = new AwesomeValidation(ValidationStyle.BASIC);
+
+
+        awesomeValidation1.addValidation(this, R.id.loginUsername, "^[0-9]{9}[V]$", R.string.unErrorLoginScreen);
+       // awesomeValidation1.addValidation(this, R.id.loginPassword, "^[0-9A-z]{10}$", R.string.pwdError1);
+
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,13 +62,10 @@ public class MainLogin extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
 
 
-                if(TextUtils.isEmpty(username) || TextUtils.isEmpty(password)){
+                if(awesomeValidation1.validate()) {
 
-                    Toast toast = Toast.makeText(getApplicationContext(), "Username or password can't be empty" , Toast.LENGTH_SHORT);
-                    toast.show();
-
-                }else {
                     checkUserType(username, password);
+
                 }
 
             }

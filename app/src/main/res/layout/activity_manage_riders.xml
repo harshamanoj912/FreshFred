@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".IT19208718.ManageRiders"
-    android:background="@drawable/delivery_boy_order_list_bg">
+    android:background="@drawable/manage_riders_bg">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/riderListRecyclerView"

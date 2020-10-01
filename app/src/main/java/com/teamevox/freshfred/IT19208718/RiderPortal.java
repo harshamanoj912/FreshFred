@@ -43,7 +43,7 @@ public class RiderPortal extends AppCompatActivity {
         loadRiderDP1 = findViewById(R.id.loadRiderDP);
 
         //lad logged user's image
-        GlobalClass global= ( (GlobalClass) getApplicationContext() );
+        final GlobalClass global= ( (GlobalClass) getApplicationContext() );
         StorageReference storageReference = theStorage.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("riders").child(global.getLoggedRiderUsername());
 
 
@@ -98,6 +98,7 @@ public class RiderPortal extends AppCompatActivity {
             public void onClick(View view) {
                 Toast toast = Toast.makeText(RiderPortal.this, "Logging Out", Toast.LENGTH_SHORT);
                 toast.show();
+                global.setLoggedRiderUsername(null);
                 startActivity(new Intent(getBaseContext(), MainLogin.class));
             }
         });
