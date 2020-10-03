@@ -95,7 +95,7 @@ public class Cart extends AppCompatActivity {
                     public void onClick(View view) {
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(Cart.this);
-                        builder.setMessage("Are you sure you want to Remove this food item : ")
+                        builder.setMessage("Are you sure you want to Remove this food item?? ")
                                 .setTitle("Confirm Delete")
                                 .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {
