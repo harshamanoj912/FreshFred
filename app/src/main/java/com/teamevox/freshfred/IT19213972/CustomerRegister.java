@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.teamevox.freshfred.IT19208718.MainLogin;
 import com.teamevox.freshfred.R;
 
 import java.util.HashMap;
@@ -102,7 +103,7 @@ public class CustomerRegister extends AppCompatActivity {
                                        Toast.makeText(CustomerRegister.this, "Congratulations, your account has been created.", Toast.LENGTH_SHORT).show();
                                        loadingBar.dismiss();
 
-                                       Intent intent = new Intent(CustomerRegister.this, FoodHome.class);
+                                       Intent intent = new Intent(CustomerRegister.this, MainLogin.class);
                                        startActivity(intent);
                                    }
                                    else {
@@ -118,7 +119,7 @@ public class CustomerRegister extends AppCompatActivity {
                     loadingBar.dismiss();
                     Toast.makeText(CustomerRegister.this, "Please try again using another NIC.", Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(CustomerRegister.this,FoodHome.class);
+                    Intent intent = new Intent(CustomerRegister.this,MainLogin.class);
                     startActivity(intent);
                 }
             }
