@@ -114,7 +114,7 @@ public class CustomerRegister extends AppCompatActivity {
                             });
 
                 }else {
-                    Toast.makeText(CustomerRegister.this, "This " + customerNic + " already exists.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CustomerRegister.this, "This " + customerNic + " already exists!", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
                     Toast.makeText(CustomerRegister.this, "Please try again using another NIC.", Toast.LENGTH_SHORT).show();
 

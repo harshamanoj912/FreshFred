@@ -84,7 +84,7 @@ public class Cart extends AppCompatActivity {
                         Intent intent = new Intent(Cart.this, EditOrder.class);
                         intent.putExtra("food_id" , model.getFoodID());
                         intent.putExtra("quantity" , model.getQuantity());
-                        intent.putExtra("key" , key);
+                        intent.putExtra("key" ,key);
                         startActivity(intent);
 
                     }
