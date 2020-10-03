@@ -107,7 +107,7 @@ public class CustomerRegister extends AppCompatActivity {
                                        startActivity(intent);
                                    }
                                    else {
-                                       Toast.makeText(CustomerRegister.this, "Something went wrong..please try again later..", Toast.LENGTH_SHORT).show();
+                                       Toast.makeText(CustomerRegister.this, "Something went wrong..please try again later...", Toast.LENGTH_SHORT).show();
                                        loadingBar.dismiss();
                                    }
 

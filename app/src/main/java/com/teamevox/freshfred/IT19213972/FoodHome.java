@@ -74,7 +74,7 @@ public class FoodHome extends AppCompatActivity {
 
         final FirebaseRecyclerAdapter<Food , FoodViewHolder> adapter = new FirebaseRecyclerAdapter<Food, FoodViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull FoodViewHolder holder, int position, @NonNull final Food model) {
+            protected void onBindViewHolder(@NonNull FoodViewHolder holder, int position, @NonNull final Food model){
 
                 holder.txtFoodName.setText(model.getFoodName());
                 holder.txtFoodPrice.setText(model.getFoodPrice());
