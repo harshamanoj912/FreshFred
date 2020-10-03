@@ -238,7 +238,10 @@ public class MainLogin extends AppCompatActivity {
                                 global.setGetLoggedSupplierUsername(enteredUsername);
                                 break;
 
-            case "customer":    startActivity(new Intent(getApplicationContext(), FoodHome.class));
+            case "customer":    //startActivity(new Intent(getApplicationContext(), FoodHome.class));
+                                Intent intent = new Intent(getApplicationContext(), FoodHome.class);
+                                intent.putExtra("key" , enteredUsername);
+                                startActivity(intent);
                                 global.setGetLoggedCustomerUsername(enteredUsername);
                                 break;
 

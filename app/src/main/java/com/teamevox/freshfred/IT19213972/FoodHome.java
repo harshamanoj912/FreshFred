@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.IT19213972.Model.Food;
@@ -31,18 +32,16 @@ public class FoodHome extends AppCompatActivity {
 
 
     private String key;
-
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_home);
 
-        key = "974529412V";
+        key = getIntent().getStringExtra("key");
 
-        if(key.isEmpty()){
-            key = getIntent().getStringExtra("key");
-        }
+
 
 
         ref = FirebaseDatabase.getInstance().getReference().child("food");
@@ -56,7 +55,7 @@ public class FoodHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(FoodHome.this, Cart.class);
-                i.putExtra("key",key);
+                i.putExtra("key", key);
 
                 startActivity(i);
             }
