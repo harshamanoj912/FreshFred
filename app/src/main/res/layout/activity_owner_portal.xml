@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IT19208718.OwnerPortal"
+    android:background="@drawable/owner_portal_bg">
+
+
+    <Button
+        android:id="@+id/manageRiders"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/manage_riders_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Manage Riders"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <Button
+        android:id="@+id/ownerLogout"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/user_logout_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toEndOf="@+id/todayIncome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <Button
+        android:id="@+id/btn0001"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/manage_food_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Manage Foods"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <Button
+        android:id="@+id/orderList4"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/order_list_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Order List"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Button
+        android:id="@+id/todayIncome"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/today_income_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Today Income"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <Button
+        android:id="@+id/addNewFoodsBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:text="Add New Foods"
+        android:drawableEnd="@drawable/add_food_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/addNewSupplierBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:text="Add New Supplier"
+        android:drawableEnd="@drawable/supplier_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addNewFoodsBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/addNewRiderBtn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/rider_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Add new Rider"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/manageRiders"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <Button
+        android:id="@+id/btn00002"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/req_new_supply_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Request Supply"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn0001"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <Button
+        android:id="@+id/dhffdh"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/edittext_items"
+        android:drawableEnd="@drawable/manage_riders_icon"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:text="Manage Suppliers"
+        android:textColor="#070707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/orderList4"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

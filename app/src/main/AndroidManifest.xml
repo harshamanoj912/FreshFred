@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teamevox.freshfred">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".IT19208718.GlobalClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".IT19208718.TodayIncomeForShop"
+            android:label="Total Income" />
+        <activity android:name=".IT19208718.AssignedOrdersForRiders" android:label="To be delivered"/>
+        <activity android:name=".IT19207650.AddNewFood" />
+        <activity android:name=".IT19213972.CustomerRegister" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".IT19213972.ConfirmOrder" />
+        <activity android:name=".IT19213972.Cart" />
+        <activity android:name=".IT19213972.FoodDetails" />
+        <activity android:name=".IT19213972.EditOrder" />
+        <activity android:name=".IT19213972.FoodHome" />
+        <activity
+            android:name=".IT19208718.ManageRiders"
+            android:label="Manage Your Riders" />
+        <activity
+            android:name=".IT19208718.MainLogin"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".IT19208718.OrdersForDistribution"
+            android:label="Order Queue" />
+        <activity
+            android:name=".IT19208718.AddNewRider"
+            android:label="Adding New Rider" />
+        <activity
+            android:name=".IT19208718.OwnerPortal"
+            android:label="Welcome Boss" />
+        <activity
+            android:name=".IT19208718.SetNewPassword"
+            android:label="Set New Password" />
+        <activity
+            android:name=".IT19208718.ForgotPassword"
+            android:label="Find Your Account" />
+        <activity
+            android:name=".IT19208718.RiderPortal"
+            android:label="Hello Rider" />
+        <activity android:name=".IT19216492.OrderRequest" />
+        <activity android:name=".IT19216492.UpdateSupplierDetails" />
+        <activity android:name=".IT19216492.SupplierInterface" />
+        <activity
+            android:name=".IT19208718.RiderEarningHistory"
+            android:label="Your Earning History" />
+        <activity
+            android:name=".IT19208718.DistributedOrders"
+            android:label="Delivered Summary" />
+        <activity
+            android:name=".IT19208718.UpdateRiderDetails"
+            android:label="Update Details" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".IT19216492.AppStart"  android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

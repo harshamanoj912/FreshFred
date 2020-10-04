@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.teamevox.freshfred.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_shop_home" />
+
+    <activity
+        android:id="@+id/riderLogin"
+        android:name="com.teamevox.freshfred.IT19208718.RiderLogin"
+        android:label="activity_rider_login"
+        tools:layout="@layout/activity_rider_login" />
+    <activity
+        android:id="@+id/riderPortal"
+        android:name="com.teamevox.freshfred.IT19208718.RiderPortal"
+        android:label="activity_rider_portal"
+        tools:layout="@layout/activity_rider_portal" />
+    <activity
+        android:id="@+id/supplierLogin"
+        android:name="com.teamevox.freshfred.IT19216492.SupplierLogin"
+        android:label="activity_supplier_login"
+        tools:layout="@layout/activity_supplier_login" />
+    <activity
+        android:id="@+id/ownerLogin"
+        android:name="com.teamevox.freshfred.IT19208718.OwnerLogin"
+        android:label="activity_owner_login"
+        tools:layout="@layout/activity_owner_login" />
+    <activity
+        android:id="@+id/mainLogin"
+        android:name="com.teamevox.freshfred.IT19208718.MainLogin"
+        android:label="activity_main_login"
+        tools:layout="@layout/activity_main_login" />
+
+
+</navigation>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IT19208718.AddNewRider"
+    android:background="@drawable/add_rider_bg">
+
+
+    <EditText
+        android:id="@+id/riderName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:hint="@string/rider_name"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/riderNic"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:hint="@string/rider_nic"
+        android:paddingStart="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/riderProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#A1FFFFFF"
+        android:src="@drawable/choose_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <TextView
+        android:id="@+id/riderMobileUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="100dp"
+        android:fontFamily="@font/amarante"
+        android:text="Choose a \nPhoto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <Button
+        android:id="@+id/addNewRider"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:text="@string/rider_btn"
+        android:textColor="#000000"
+        android:drawableEnd="@drawable/add_new_user_"
+        android:drawablePadding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <EditText
+        android:id="@+id/riderMobile"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:hint="@string/rider_mobile_number"
+        android:paddingStart="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/riderPassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:hint="Password"
+        android:paddingStart="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/riderCommission"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:hint="@string/rider_commission"
+        android:paddingStart="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/riderBikeNumber"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_items"
+        android:fontFamily="@font/amarante"
+        android:hint="@string/rider_bike_number"
+        android:paddingStart="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723"
+        tools:ignore="RtlSymmetry" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singleOrderShowForRiders"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/foodNameTXTOrderQueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name : "
+        android:textColor="#000000"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/foodPriceTXTOrderQueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price : "
+        android:textColor="#000000"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodNameTXTOrderQueue"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/addressTXTOrderQueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address : "
+        android:textColor="#000000"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderIDTXTOrderQueue"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/orderIDTXTOrderQueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID : "
+        android:textColor="#000000"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerMobileTXTOrderQueue"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/customerMobileTXTOrderQueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Mobile : "
+        android:textColor="#000000"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customerNameTXTOrderQueue"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/customerNameTXTOrderQueue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name : "
+        android:textColor="#000000"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodPriceTXTOrderQueue"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/assignThisOrderForMe"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34"
+        app:srcCompat="@drawable/i_will_deliver" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assign for me"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
