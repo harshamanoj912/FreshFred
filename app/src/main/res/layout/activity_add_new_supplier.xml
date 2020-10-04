@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".IT19216492.AddNewSupplier">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="@string/add_new_supplier"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+
+    <EditText
+        android:id="@+id/supplierName"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/supplier_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/supplierNic"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Suppler NIC"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/supplierMobile"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/supplier_mobile_number"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/supplierItem"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/supply_item"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/supplierPassword"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/supplier_default_password"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#B53F3F"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/addNewSupplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:text="@string/supplier_btn"
+        android:textColor="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <ImageView
+        android:id="@+id/supplierProfilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#A1FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/supplierMobileUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="Select a profile\npicture"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
