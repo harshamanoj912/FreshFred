@@ -126,6 +126,7 @@ public class AssignedOrderListForRiderAdapter extends FirebaseRecyclerAdapter<Or
 
                 double finalCommissionValueForThisOrder =  Calc.calculateCommission(tmpVal, totalPriceForTheOrder);
 
+
                 //calculate price for owner
                 double priceForOwner = (totalPriceForTheOrder - finalCommissionValueForThisOrder);
 
@@ -233,5 +234,9 @@ public class AssignedOrderListForRiderAdapter extends FirebaseRecyclerAdapter<Or
 
 
 
+}
+
+
 
 }
+

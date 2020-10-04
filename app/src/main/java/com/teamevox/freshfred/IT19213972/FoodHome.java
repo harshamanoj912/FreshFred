@@ -11,6 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.TextView;
+
+
 import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.IT19213972.Model.Food;
 import com.teamevox.freshfred.IT19213972.ViewHolder.FoodViewHolder;
@@ -38,11 +41,10 @@ public class FoodHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_home);
 
-        key = "974529412V";
+        key = getIntent().getStringExtra("key");
 
-        if(key.isEmpty()){
-            key = getIntent().getStringExtra("key");
-        }
+
+
 
 
         ref = FirebaseDatabase.getInstance().getReference().child("food");
@@ -56,7 +58,8 @@ public class FoodHome extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(FoodHome.this, Cart.class);
-                i.putExtra("key",key);
+
+                i.putExtra("key", key);
 
                 startActivity(i);
             }
@@ -75,7 +78,9 @@ public class FoodHome extends AppCompatActivity {
 
         final FirebaseRecyclerAdapter<Food , FoodViewHolder> adapter = new FirebaseRecyclerAdapter<Food, FoodViewHolder>(options) {
             @Override
-            protected void onBindViewHolder(@NonNull FoodViewHolder holder, int position, @NonNull final Food model) {
+
+            protected void onBindViewHolder(@NonNull FoodViewHolder holder, int position, @NonNull final Food model){
+
 
                 holder.txtFoodName.setText(model.getFoodName());
                 holder.txtFoodPrice.setText(model.getFoodPrice());

@@ -15,7 +15,9 @@
         <activity
             android:name=".IT19208718.TodayIncomeForShop"
             android:label="Total Income" />
+
         <activity android:name=".IT19208718.AssignedOrdersForRiders" android:label="To be delivered"/>
+
         <activity android:name=".IT19207650.AddNewFood" />
         <activity android:name=".IT19213972.CustomerRegister" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".IT19213972.ConfirmOrder" />
@@ -52,7 +54,9 @@
             android:label="Hello Rider" />
         <activity android:name=".IT19216492.OrderRequest" />
         <activity android:name=".IT19216492.UpdateSupplierDetails" />
+
         <activity android:name=".IT19216492.SupplierInterface" />
+
         <activity
             android:name=".IT19208718.RiderEarningHistory"
             android:label="Your Earning History" />

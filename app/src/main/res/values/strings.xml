@@ -139,5 +139,16 @@
     <string name="commError1">Commission should less than 100%</string>
     <string name="unErrorLoginScreen">Enter the correct username</string>
 
+    <string name="invalid_name">Please enter a valid Name</string>
+    <string name="invalid_mobile_number">Please enter a valid Phone number</string>
+
+    <!-- IT19207650 | Dissanayake D.M.B.W.D.K. | Add food-->
+    <string name="add_new_food">Add New Food</string>
+    <string name="food_name">Food Name</string>
+    <string name="food_des">Food Description</string>
+    <string name="food_price">Price per unit</string>
+
+
+
 
 </resources>

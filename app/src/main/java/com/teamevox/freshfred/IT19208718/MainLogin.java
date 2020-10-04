@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import android.text.TextUtils;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +26,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.teamevox.freshfred.IT19213972.CustomerRegister;
 import com.teamevox.freshfred.IT19213972.FoodHome;
+
 import com.teamevox.freshfred.IT19216492.SupplierInterface;
+
+
 import com.teamevox.freshfred.R;
 
 public class MainLogin extends AppCompatActivity {
@@ -233,11 +239,17 @@ public class MainLogin extends AppCompatActivity {
                             global.setGetLoggedOwnerUsername(enteredUsername);
                             break;
 
+
             case "supplier":    startActivity(new Intent(getApplicationContext(), SupplierInterface.class));
                                 global.setGetLoggedSupplierUsername(enteredUsername);
                                 break;
+            
 
-            case "customer":    startActivity(new Intent(getApplicationContext(), FoodHome.class));
+            case "customer":    //startActivity(new Intent(getApplicationContext(), FoodHome.class));
+                                Intent intent = new Intent(getApplicationContext(), FoodHome.class);
+                                intent.putExtra("key" , enteredUsername);
+                                startActivity(intent);
+
                                 global.setGetLoggedCustomerUsername(enteredUsername);
                                 break;
 
