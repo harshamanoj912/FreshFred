@@ -87,11 +87,11 @@ public class ConfirmOrder extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Toast.makeText(getApplicationContext(),"Order Confirmed" , Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(),"Order Confirmed!" , Toast.LENGTH_LONG).show();
                                 ref.child(key).child(cart.getFoodID()).removeValue();
                             }
                             else{
-                                Toast.makeText(getApplicationContext(),"Oops something went wrong " , Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(),"Oops something went wrong!" , Toast.LENGTH_LONG).show();
                             }
                         }
                     });
