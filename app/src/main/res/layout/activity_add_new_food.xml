@@ -4,55 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/cookies"
     tools:context=".IT19207650.AddNewFood">
 
 
     <EditText
         android:id="@+id/editTextFoodName"
-        android:layout_width="359dp"
-        android:layout_height="55dp"
-        android:ems="10"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:hint="@string/food_name"
         android:inputType="textPersonName"
-        android:text="Food Name"
-        android:textColor="#0F26A8"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.268"
+        tools:ignore="RtlSymmetry" />
 
     <EditText
         android:id="@+id/editTextFoodDes"
-        android:layout_width="359dp"
-        android:layout_height="55dp"
-        android:ems="10"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:hint="@string/food_des"
         android:inputType="textPersonName"
-        android:text="Food Desc"
-        android:textColor="#14299C"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.406"
+        tools:ignore="RtlSymmetry" />
+
 
     <EditText
         android:id="@+id/editTextFoodPrice"
-        android:layout_width="359dp"
-        android:layout_height="55dp"
-        android:ems="10"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:hint="@string/food_price"
         android:inputType="textPersonName"
-        android:text="Food Price"
-        android:textColor="#14299C"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+        tools:ignore="RtlSymmetry" />
 
     <Button
         android:id="@+id/buttonaddFood"
         android:layout_width="131dp"
         android:layout_height="65dp"
+        android:background="#5E454F"
         android:shadowColor="#D55681"
         android:text="Add Now"
         android:textColor="#E10650"
@@ -67,9 +85,9 @@
 
     <TextView
         android:id="@+id/add_new_food"
-        android:layout_width="161dp"
-        android:layout_height="31dp"
-        android:text="Add new foods"
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:text="@string/add_new_food"
         android:textColor="#D62C2C"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -93,10 +111,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintVertical_bias="0.716" />
 
     <ImageView
         android:id="@+id/foodProfilePicture"
