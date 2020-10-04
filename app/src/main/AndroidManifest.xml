@@ -12,12 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".IT19207650.UpdateFood"></activity>
+        <activity android:name=".IT19207650.ListOfFoods" />
+        <activity android:name=".IT19207650.ShowFood" />
         <activity
             android:name=".IT19208718.TodayIncomeForShop"
             android:label="Total Income" />
         <activity android:name=".IT19208718.AssignedOrdersForRiders" />
         <activity android:name=".IT19207650.AddNewFood" />
-        <activity android:name=".IT19213972.CustomerRegister" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".IT19213972.CustomerRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".IT19213972.ConfirmOrder" />
         <activity android:name=".IT19213972.Cart" />
         <activity android:name=".IT19213972.FoodDetails" />
@@ -29,9 +34,7 @@
         <activity
             android:name=".IT19208718.MainLogin"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".IT19208718.OrdersForDistribution"
             android:label="Order Queue" />
@@ -71,13 +74,15 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".IT19216492.AppStart"  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".IT19216492.AppStart"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

@@ -147,6 +147,8 @@
     <string name="food_des">Food Description</string>
     <string name="food_price">Price per unit</string>
 
-
+    <!-- IT19207650 | Dissanayake D.M.B.W.D.K. | Update food-->
+    <string name="update_food">Update Food Details</string>
+    <string name="delete_food">Delete Food</string>
 
 </resources>

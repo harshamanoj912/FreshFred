@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cookies"
+    tools:context=".IT19207650.UpdateFood">
+
+    <EditText
+        android:id="@+id/editTextFoodNameupdated"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:hint="@string/food_name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/editTextFoodDesupdated"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:hint="@string/food_des"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406"
+        tools:ignore="RtlSymmetry" />
+
+
+    <EditText
+        android:id="@+id/editTextFoodPriceupdated"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_on_secondary"
+        android:hint="@string/food_price"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.532"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#5E454F"
+        android:onClick="update"
+        android:text="@string/update"
+        android:textColor="#E10650"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+
+    <TextView
+        android:id="@+id/update_food"
+        android:layout_width="268dp"
+        android:layout_height="55dp"
+        android:text="@string/update_food"
+        android:textColor="#D62C2C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/choose_photoupdated"
+        android:layout_width="238dp"
+        android:layout_height="81dp"
+        android:width="100dp"
+        android:fontFamily="@font/amarante"
+        android:text="Choose a \nPhoto "
+        android:textAlignment="center"
+        android:textColor="#D80E7A"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716" />
+
+    <ImageView
+        android:id="@+id/foodProfilePictureupdated"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#A1FFFFFF"
+        android:src="@drawable/choose_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <Button
+        android:id="@+id/deletefood"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="#5E454F"
+        android:onClick="delete"
+        android:text="@string/delete_food"
+        android:textColor="#E10650"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

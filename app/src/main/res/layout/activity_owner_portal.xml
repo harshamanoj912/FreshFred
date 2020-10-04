@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.93" />
 
     <Button
-        android:id="@+id/btn0001"
+        android:id="@+id/manageFoodsBtn"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:background="@drawable/edittext_items"
@@ -147,6 +147,7 @@
         android:id="@+id/btn00002"
         android:layout_width="150dp"
         android:layout_height="60dp"
+        android:layout_marginStart="32dp"
         android:background="@drawable/edittext_items"
         android:drawableEnd="@drawable/req_new_supply_icon"
         android:drawablePadding="5dp"
@@ -158,7 +159,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66" />
+        app:layout_constraintVertical_bias="0.659" />
 
     <Button
         android:id="@+id/dhffdh"
