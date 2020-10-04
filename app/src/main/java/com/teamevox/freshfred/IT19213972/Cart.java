@@ -84,7 +84,7 @@ public class Cart extends AppCompatActivity {
                         Intent intent = new Intent(Cart.this, EditOrder.class);
                         intent.putExtra("food_id" , model.getFoodID());
                         intent.putExtra("quantity" , model.getQuantity());
-                        intent.putExtra("key" , key);
+                        intent.putExtra("key" ,key);
                         startActivity(intent);
 
                     }
@@ -95,7 +95,7 @@ public class Cart extends AppCompatActivity {
                     public void onClick(View view) {
 
                         AlertDialog.Builder builder = new AlertDialog.Builder(Cart.this);
-                        builder.setMessage("Are you sure you want to Remove this food item : ")
+                        builder.setMessage("Are you sure you want to Remove this food item?? ")
                                 .setTitle("Confirm Delete")
                                 .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int id) {

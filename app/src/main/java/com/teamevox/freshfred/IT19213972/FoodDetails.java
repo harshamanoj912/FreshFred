@@ -81,7 +81,7 @@ public class FoodDetails extends AppCompatActivity {
                     {
                         if(task.isSuccessful())
                         {
-                            Toast.makeText(FoodDetails.this,"Added to CartList",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(FoodDetails.this,"Added to CartList!",Toast.LENGTH_SHORT).show();
 
                             Intent intent = new Intent(FoodDetails.this, FoodHome.class);
                             intent.putExtra("key",key);

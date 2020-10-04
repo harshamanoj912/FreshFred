@@ -21,15 +21,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029" />
 
+    <TextView
+        android:id="@+id/supplierMobileUpdated2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="Profile picture"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <ImageView
+        android:id="@+id/supplierProfilePictureUpdated"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#A1FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
 
     <EditText
-        android:id="@+id/supplierPassword"
+        android:id="@+id/supplierPasswordUP"
         android:layout_width="200dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:inputType="textPassword"
+        android:editable="false"
         android:paddingLeft="20dp"
-        android:text="45888364125"
         android:textColor="#B53F3F"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#0027FF"
@@ -38,16 +65,14 @@
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646"
+        app:layout_constraintVertical_bias="0.598"
         tools:ignore="RtlSymmetry" />
 
-
     <EditText
-        android:id="@+id/supplierItem"
+        android:id="@+id/supplierItemUP"
         android:layout_width="200dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="sugar"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
         android:textColor="#3F51B5"
@@ -58,17 +83,16 @@
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.496"
+        app:layout_constraintVertical_bias="0.499"
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/supplierMobile"
+        android:id="@+id/supplierMobileUP"
         android:layout_width="200dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        android:text="0763245869"
         android:textColor="#3F51B5"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#0027FF"
@@ -77,17 +101,16 @@
         app:layout_constraintHorizontal_bias="0.829"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356"
+        app:layout_constraintVertical_bias="0.403"
         tools:ignore="RtlSymmetry" />
 
     <EditText
-        android:id="@+id/supplierName"
+        android:id="@+id/supplierNameUP"
         android:layout_width="200dp"
-        android:layout_height="51dp"
+        android:layout_height="40dp"
         android:background="@drawable/rounded_edittext"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        android:text=" vimal perera"
         android:textColor="#3F51B5"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#0027FF"
@@ -99,20 +122,55 @@
         app:layout_constraintVertical_bias="0.202" />
 
 
+    <EditText
+
+        android:id="@+id/supplierNicUP"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_edittext"
+        android:editable="false"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#0027FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:ignore="RtlSymmetry" />
+
     <TextView
         android:id="@+id/supplierNameUpdated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/amarante"
-        android:text="@string/Supplier_Name"
+        android:text="@string/supplier_name"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/supplierNicUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:text="NIC Number"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
 
     <TextView
         android:id="@+id/supplierPasswordUpdated"
@@ -123,24 +181,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
-
-    <TextView
-        android:id="@+id/supplierPhotoUpdated"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/supplier_photo"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756" />
+        app:layout_constraintVertical_bias="0.602" />
 
     <TextView
         android:id="@+id/supplierMobileUpdated"
@@ -151,28 +195,28 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintVertical_bias="0.417" />
 
     <TextView
         android:id="@+id/supplyItemUpdated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/rider_commission"
+        android:text="Item"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        tools:text="supply item" />
+        app:layout_constraintVertical_bias="0.512"
+        tools:text="Supply Item" />
 
     <Button
-        android:id="@+id/deleteButton"
+        android:id="@+id/deleteSupplierAccount"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/rounded_edittext"
@@ -187,7 +231,7 @@
 
     <Button
         android:id="@+id/updateButton"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/rounded_edittext"
         android:text="Update"
@@ -199,16 +243,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.971" />
 
-    <ImageView
-        android:id="@+id/updateProfilePicture"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836"
-        app:srcCompat="@drawable/default_picture" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
