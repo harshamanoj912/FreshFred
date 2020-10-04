@@ -79,8 +79,6 @@
         </activity>
 
 
-        <activity android:name=".IT19216492.SupplierPortal" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
