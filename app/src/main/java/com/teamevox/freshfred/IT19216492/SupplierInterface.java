@@ -7,7 +7,7 @@ import android.view.View;
 
 import com.teamevox.freshfred.R;
 
-public class SupplierPortal extends AppCompatActivity {
+public class SupplierInterface extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

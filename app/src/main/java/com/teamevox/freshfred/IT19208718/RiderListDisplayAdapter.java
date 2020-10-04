@@ -173,9 +173,6 @@ public class RiderListDisplayAdapter extends FirebaseRecyclerAdapter <Rider, Rid
 
     }
 
-
-
-
     public static class NewRiderCommissionDialog extends AppCompatDialogFragment {
 
         private EditText newCommission;

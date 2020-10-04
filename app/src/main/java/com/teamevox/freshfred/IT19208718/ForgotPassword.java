@@ -41,11 +41,13 @@ public class ForgotPassword extends AppCompatActivity {
         awesomeValidation0.addValidation(this, R.id.resetPasswordNIC, "^[0-9]{9}[V]$", R.string.nicError1);
         awesomeValidation0.addValidation(this, R.id.resetPasswordMobile, "^[0-9]{10}$", R.string.mobileError1);
 
-        if (awesomeValidation0.validate()){
+
 
             riderGoToResetPwdPage.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
+                    if (awesomeValidation0.validate()){
 
 
                     final String resetPasswordNicValue = resetPasswordNIC.getText().toString();
@@ -147,12 +149,12 @@ public class ForgotPassword extends AppCompatActivity {
                         }
                     });
 
-
+                }
                 }
             });
 
 
-    }
+
     }
 
     public void validateForReset(String enteredNicByUser, String enteredMobileByUser , String userMobileFromDb, String userType ){

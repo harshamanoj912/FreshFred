@@ -59,11 +59,6 @@ public class RiderEarningHistory extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
 
-                        Task<Void>  forOwners1 = FirebaseDatabase.getInstance().getReference("totalEarningHistory").child("totalItemDelivered").setValue(ServerValue.increment(Integer.parseInt(Objects.requireNonNull(snapshot.child("totalItemDelivered").getValue()).toString())));
-                        Task<Void>  forOwners2 = FirebaseDatabase.getInstance().getReference("totalEarningHistory").child("totalCostOfDeliveredItems").setValue(ServerValue.increment(Double.parseDouble(Objects.requireNonNull(snapshot.child("totalCostOfDeliveredItems").getValue()).toString())));
-                        Task<Void>  forOwners3 = FirebaseDatabase.getInstance().getReference("totalEarningHistory").child("totalRiderCommission").setValue(ServerValue.increment(Double.parseDouble(Objects.requireNonNull(snapshot.child("totalCommission").getValue()).toString())));
-                        Task<Void>  forOwners4 = FirebaseDatabase.getInstance().getReference("totalEarningHistory").child("forOwner").setValue(ServerValue.increment(Double.parseDouble(Objects.requireNonNull(snapshot.child("forOwner").getValue()).toString())));
-
 
                        Task<Void>  forRider1 = FirebaseDatabase.getInstance().getReference("commissionForRiders").child(global.getLoggedRiderUsername()).child("totalItemDelivered").setValue(0);
                        Task<Void>  forRider2 = FirebaseDatabase.getInstance().getReference("commissionForRiders").child(global.getLoggedRiderUsername()).child("totalCostOfDeliveredItems").setValue(0);

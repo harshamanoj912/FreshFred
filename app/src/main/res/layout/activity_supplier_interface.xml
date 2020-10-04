@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".IT19216492.SupplierPortal">
+    tools:context=".IT19216492.SupplierInterface">
 
     <TextView
         android:id="@+id/supplierName"
