@@ -76,7 +76,7 @@ public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<Reque
            super(itemView001);
 
 
-           supplierItemName = itemView001.findViewById(R.id.supplierListSupplierNameTxt);
+           supplierItemName = itemView001.findViewById(R.id.supplierOrderSupplierItemNameTxt);
            supplierOrderQuantity = itemView001.findViewById(R.id.supplierOrderSupplierQuantityTxt);
            supplierOrderMobile = itemView001.findViewById(R.id.supplierOrderSupplierMobileTxt);
            supplierOrderAddress = itemView001.findViewById(R.id.supplierOrderSupplierAddressTxt);
