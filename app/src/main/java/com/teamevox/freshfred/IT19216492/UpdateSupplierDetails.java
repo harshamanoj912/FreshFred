@@ -23,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+import com.teamevox.freshfred.IT19208718.GlobalClass;
 import com.teamevox.freshfred.R;
 
 import java.io.File;
@@ -58,12 +59,12 @@ public class UpdateSupplierDetails extends AppCompatActivity {
         storageReference1 = storage1.getReference();
 
 
-      //  GlobalClass global= ( (GlobalClass) getApplicationContext() );
-        //StorageReference storageReference = storage1.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("riders").child(global.getLoggedRiderUsername());
+       GlobalClass global= ( (GlobalClass) getApplicationContext() );
+       StorageReference storageReference = storage1.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("suppliers").child(global.getGetLoggedSupplierUsername());
 
         try {
             final File file = File.createTempFile("img", "jpeg");
-            storageReference1.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+            storageReference.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                 @Override
                 public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
                     Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
@@ -179,7 +180,7 @@ public class UpdateSupplierDetails extends AppCompatActivity {
                     String name = supplierSnapshot.child("supplierName").getValue().toString();
                     String nic = supplierSnapshot.child("supplierNic").getValue().toString();
                     String mobile = supplierSnapshot.child("supplierMobile").getValue().toString();
-                    String item = supplierSnapshot.child("supplyItem").getValue().toString();
+                    String item = supplierSnapshot.child("supplierItem").getValue().toString();
                     String password = supplierSnapshot.child("supplierPassword").getValue().toString();
 
                     supplierName11.setText(name);
