@@ -72,7 +72,8 @@ public class RequestSupplyOrderHome extends AppCompatActivity {
                         .build();
 
 
-       adapter71 = new RequestSupplyOrderHomeAdapter(options);
+
+       adapter71 = new RequestSupplyOrderHomeAdapter(options, global.getGetLoggedSupplierUsername());
         supplierOrderRecyclerView1.setAdapter(adapter71);
 
 

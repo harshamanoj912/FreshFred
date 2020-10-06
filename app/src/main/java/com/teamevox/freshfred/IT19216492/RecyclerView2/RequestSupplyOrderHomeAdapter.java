@@ -28,11 +28,15 @@ import com.teamevox.freshfred.IT19216492.RequestSupplyOrders;
 
 public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<RequestSupplyOrders, RequestSupplyOrderHomeAdapter.SupplierListDisplayViewHolder> {
 
-   RequestSupplyOrderHomeAdapter (@NonNull FirebaseRecyclerOptions<RequestSupplyOrders> options) {
+    final String loggedSupplierNIC;
+
+   RequestSupplyOrderHomeAdapter (@NonNull FirebaseRecyclerOptions<RequestSupplyOrders> options, String loggedSupplierNIC) {
        super(options);
+       this.loggedSupplierNIC = loggedSupplierNIC;
    }
 
-   @SuppressLint("SetTextI18n")
+
+    @SuppressLint("SetTextI18n")
    @Override
    protected void onBindViewHolder(@NonNull final SupplierListDisplayViewHolder holder, int position, @NonNull final RequestSupplyOrders model) {
 
@@ -49,7 +53,7 @@ public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<Reque
           @Override
            public void onClick(View view) {
 
-              deleteOrderAccount(model.getSupplierItemName());
+              deleteOrderAccount(loggedSupplierNIC, model.getSupplierItemName(), model.getSupplierOrderQuantity(), model.getSupplierOrderMobile(), model.getSupplierOrderAddress());
                Toast.makeText(context, "Order Removed", Toast.LENGTH_SHORT).show();
    }
        });
@@ -58,7 +62,8 @@ public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<Reque
 
    }
 
-   @NonNull
+
+    @NonNull
    @Override
    public SupplierListDisplayViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
@@ -90,14 +95,12 @@ public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<Reque
    }
 
 
- public void deleteOrderAccount(String editNIC) {
+ public void deleteOrderAccount(String loggedUser, String supplierItemName, String supplierOrderQuantity, String supplierOrderMobile, String supplierOrderAddress) {
 
-       FirebaseDatabase database = FirebaseDatabase.getInstance();
-       DatabaseReference databaseSupplierOrderRequests = database.getReference("supplierOrderRequests");
 
-       if (!TextUtils.isEmpty(editNIC)) {
+     DatabaseReference deleteFromFreshOrders = FirebaseDatabase.getInstance().getReference("supplierOrderRequests").child(loggedUser);
+     Query deleteQuery = deleteFromFreshOrders.orderByChild("supplierItemName").equalTo(supplierItemName);
 
-           Query deleteQuery = databaseSupplierOrderRequests.orderByChild("supplierOrderRequests").equalTo(editNIC);
 
            deleteQuery.addListenerForSingleValueEvent(new ValueEventListener() {
                @Override
@@ -117,6 +120,6 @@ public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<Reque
 
    }
 
-}
+
 
 
