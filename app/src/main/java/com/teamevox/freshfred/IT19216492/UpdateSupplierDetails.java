@@ -105,7 +105,7 @@ public class UpdateSupplierDetails extends AppCompatActivity {
         if( !TextUtils.isEmpty(supplierNicForDelete)  )
         {
 
-            Query deleteQuery = databaseSupplier.orderByChild("012345678V").equalTo(supplierNicForDelete);
+            Query deleteQuery = databaseSupplier.orderByChild("suppliers").equalTo(supplierNicForDelete);
 
             deleteQuery.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
@@ -147,10 +147,10 @@ public class UpdateSupplierDetails extends AppCompatActivity {
         String theSupplierPassword = supplierPassword11.getText().toString();
 
 
-        if(!TextUtils.isEmpty(theSupplierNic)  || !TextUtils.isEmpty(theSupplierPassword) || !TextUtils.isEmpty(theSupplierName) || !TextUtils.isEmpty(theSupplierMobile) || !TextUtils.isEmpty(theSupplierItem) ) //
+        if(!TextUtils.isEmpty(theSupplierPassword) && !TextUtils.isEmpty(theSupplierNic) && !TextUtils.isEmpty(theSupplierName) && !TextUtils.isEmpty(theSupplierMobile) && !TextUtils.isEmpty(theSupplierItem) ) //
         {
 
-            Supplier supplier = new Supplier(theSupplierName, theSupplierPassword, theSupplierNic, theSupplierMobile, theSupplierItem);
+            Supplier supplier = new Supplier(theSupplierName, theSupplierNic, theSupplierMobile, theSupplierItem, theSupplierPassword);
             databaseSupplier.child(theSupplierNic).setValue(supplier);
             Toast toast = Toast.makeText(this, "Updating", Toast.LENGTH_SHORT);
             toast.show();
@@ -167,9 +167,11 @@ public class UpdateSupplierDetails extends AppCompatActivity {
     public void getValues() {
 
 
+        GlobalClass global= ( (GlobalClass) getApplicationContext() );
 
+        Query deleteQuery = databaseSupplier.orderByChild("supplierNic").equalTo(global.getGetLoggedSupplierUsername());
 
-        databaseSupplier.addValueEventListener(new ValueEventListener() {
+        deleteQuery.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot ) {
 

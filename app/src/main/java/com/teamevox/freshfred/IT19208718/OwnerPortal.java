@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.teamevox.freshfred.IT19207650.OrderList;
 import com.teamevox.freshfred.IT19207650.AddNewFood;
+import com.teamevox.freshfred.IT19216492.AddNewSupplier;
+import com.teamevox.freshfred.IT19216492.RecyclerView1.SupplierHome;
 import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.IT19208718.TodayIncomeForShop;
 
@@ -18,7 +20,7 @@ public class OwnerPortal extends AppCompatActivity {
 
 
     //get Your button via ID
-    Button addNewRiderBtn, addNewSupplierBtn, addNewFoodsBtn, orderList, manageRiders, ownerLogout, todayIncome;
+    Button addNewRiderBtn, addNewSupplierBtn, addNewFoodsBtn, orderList, manageRiders, ownerLogout, todayIncome,manageSuppliers;
 
 
     @Override
@@ -34,6 +36,8 @@ public class OwnerPortal extends AppCompatActivity {
         addNewFoodsBtn = findViewById(R.id.addNewFoodsBtn);
         ownerLogout = findViewById(R.id.ownerLogout);
         todayIncome = findViewById(R.id.todayIncome);
+        addNewSupplierBtn = findViewById(R.id.addNewSupplierBtn);
+        manageSuppliers = findViewById(R.id.manageSuppliers);
 
         //Set new onClickListener like this
 
@@ -83,6 +87,22 @@ public class OwnerPortal extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), TodayIncomeForShop.class));
             }
         });
+
+        addNewSupplierBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), AddNewSupplier.class));
+            }
+        });
+
+        manageSuppliers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), SupplierHome.class));
+            }
+        });
+
+
 
     }
 }
