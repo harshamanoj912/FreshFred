@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +16,7 @@ import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.teamevox.freshfred.IT19208718.GlobalClass;
+import com.teamevox.freshfred.IT19208718.MainLogin;
 import com.teamevox.freshfred.R;
 import com.teamevox.freshfred.IT19216492.RecyclerView2.RequestSupplyOrderHome;
 
@@ -43,7 +45,7 @@ public class SupplierInterface extends AppCompatActivity {
 
         //lad logedi user's image
         GlobalClass global= ( (GlobalClass) getApplicationContext() );
-        StorageReference storageReference = theStorage.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("suppliers");
+        StorageReference storageReference = theStorage.getReferenceFromUrl("gs://freshfred-sliit.appspot.com").child("suppliers").child(global.getGetLoggedSupplierUsername());
 
 
         try {
@@ -85,14 +87,14 @@ public class SupplierInterface extends AppCompatActivity {
         });
 
 
-   //    btn4.setOnClickListener(new View.OnClickListener() {
-     //       @Override
-     //       public void onClick(View view) {
-     //           Toast toast = Toast.makeText(SupplierInterface.this, "Logging Out", Toast.LENGTH_SHORT);
-      //          toast.show();
-      //          startActivity(new Intent(getBaseContext(), SupplierLogin.class));
-      //      }
-    //    });
+       btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+           public void onClick(View view) {
+                Toast toast = Toast.makeText(SupplierInterface.this, "Logging Out", Toast.LENGTH_SHORT);
+               toast.show();
+                startActivity(new Intent(getBaseContext(), MainLogin.class));
+            }
+        });
 
 
 

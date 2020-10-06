@@ -82,7 +82,7 @@
         android:id="@+id/supplierRemove"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/bg"
+        android:src="@drawable/remove_rider_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1"
@@ -127,7 +127,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.59000003"
-        app:srcCompat="@drawable/bg" />
+        app:srcCompat="@drawable/req_supply_icon" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

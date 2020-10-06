@@ -97,7 +97,7 @@ public class RequestSupplyOrderHomeAdapter extends FirebaseRecyclerAdapter<Reque
 
        if (!TextUtils.isEmpty(editNIC)) {
 
-           Query deleteQuery = databaseSupplierOrderRequests.orderByChild("supplierItemName").equalTo(editNIC);
+           Query deleteQuery = databaseSupplierOrderRequests.orderByChild("supplierOrderRequests").equalTo(editNIC);
 
            deleteQuery.addListenerForSingleValueEvent(new ValueEventListener() {
                @Override
