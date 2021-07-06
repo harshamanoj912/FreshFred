@@ -1,0 +1,730 @@
+{
+  "Cart List" : {
+    "975802469V" : {
+      "80812" : {
+        "foodID" : "80812",
+        "foodName" : "Club Sandwitches",
+        "foodPrice" : "450",
+        "quantity" : "3"
+      }
+    }
+  },
+  "allOrdersHistory" : {
+    "11366" : {
+      "address" : "ffsa",
+      "customerName" : "ssf",
+      "foodName" : "Burger",
+      "mobileNumber" : "f",
+      "orderId" : "11366",
+      "totalPrice" : "1360"
+    },
+    "15953" : {
+      "address" : "No45, Malabe, Kaduwela",
+      "customerName" : "Alex Nethal",
+      "foodName" : "Club Sandwitches",
+      "mobileNumber" : "+94753567638",
+      "orderId" : "15953",
+      "totalPrice" : "450"
+    },
+    "16867" : {
+      "address" : "Galagedara",
+      "customerName" : "Samanmali Akarsha",
+      "foodName" : "Burger",
+      "mobileNumber" : "0721267456",
+      "orderId" : "16867",
+      "totalPrice" : "680"
+    },
+    "16957" : {
+      "address" : "Panwila",
+      "customerName" : "Deshini",
+      "foodName" : "Pasta",
+      "mobileNumber" : "07654783210",
+      "orderId" : "16957",
+      "totalPrice" : "750"
+    },
+    "17622" : {
+      "address" : "Kandy",
+      "customerName" : "",
+      "foodName" : "Tuna submarine ",
+      "mobileNumber" : "0712261890",
+      "orderId" : "17622",
+      "totalPrice" : "700"
+    },
+    "17940" : {
+      "address" : "no89",
+      "customerName" : "harsha",
+      "foodName" : "Tuna submarine ",
+      "mobileNumber" : "0774809190",
+      "orderId" : "17940",
+      "totalPrice" : "2100"
+    },
+    "18697" : {
+      "address" : "Kandy",
+      "customerName" : "Sanduni",
+      "foodName" : "Burger",
+      "mobileNumber" : "0715487845",
+      "orderId" : "18697",
+      "totalPrice" : "680"
+    },
+    "20456" : {
+      "address" : "No45, Kegalle",
+      "customerName" : "Harsha",
+      "foodName" : "Chicken Bun",
+      "mobileNumber" : "0774809190",
+      "orderId" : "20456",
+      "totalPrice" : "567"
+    },
+    "23055" : {
+      "address" : "no35",
+      "customerName" : "manju",
+      "foodName" : "French fries",
+      "mobileNumber" : "1234567890",
+      "orderId" : "23055",
+      "totalPrice" : "900"
+    },
+    "23200" : {
+      "address" : "Kandy",
+      "customerName" : "",
+      "foodName" : "French fries",
+      "mobileNumber" : "0712261890",
+      "orderId" : "23200",
+      "totalPrice" : "900"
+    },
+    "23219" : {
+      "address" : "12A/D, New Carsle Rd, Colombo",
+      "customerName" : "Tessa Alwis",
+      "foodName" : "Mongolian Rice",
+      "mobileNumber" : "0712261890",
+      "orderId" : "23219",
+      "totalPrice" : "1400"
+    },
+    "25872" : {
+      "address" : "2124",
+      "customerName" : "sa",
+      "foodName" : "Burger",
+      "mobileNumber" : "2421",
+      "orderId" : "25872",
+      "totalPrice" : "680"
+    },
+    "26123" : {
+      "address" : "sdf",
+      "customerName" : "dd",
+      "foodName" : "Pasta",
+      "mobileNumber" : "098765332",
+      "orderId" : "26123",
+      "totalPrice" : "2500"
+    },
+    "26654" : {
+      "address" : "Kandy",
+      "customerName" : "Geetha",
+      "foodName" : "Pasta",
+      "mobileNumber" : "07754327681",
+      "orderId" : "26654",
+      "totalPrice" : "250"
+    },
+    "27362" : {
+      "address" : "gsd",
+      "customerName" : "sf",
+      "foodName" : "Food Name",
+      "mobileNumber" : "sgd",
+      "orderId" : "27362",
+      "totalPrice" : "450"
+    },
+    "27449" : {
+      "address" : "Kandy",
+      "customerName" : "Sanduni",
+      "foodName" : "Burger",
+      "mobileNumber" : "0712415543",
+      "orderId" : "27449",
+      "totalPrice" : "340"
+    },
+    "28399" : {
+      "address" : "asf",
+      "customerName" : "afs",
+      "foodName" : "Burger",
+      "mobileNumber" : "fsa",
+      "orderId" : "28399",
+      "totalPrice" : "340"
+    },
+    "30267" : {
+      "address" : "Kandy",
+      "customerName" : "Isuru",
+      "foodName" : "Burger",
+      "mobileNumber" : "0786511987",
+      "orderId" : "30267",
+      "totalPrice" : "340"
+    },
+    "34793" : {
+      "address" : "No21, Kandy",
+      "customerName" : "Manoj",
+      "foodName" : "Chicken Rice",
+      "mobileNumber" : "0724567852",
+      "orderId" : "34793",
+      "totalPrice" : "544"
+    },
+    "35098" : {
+      "address" : "Gelioya",
+      "customerName" : "Sudhani",
+      "foodName" : "Burger",
+      "mobileNumber" : "0711123523",
+      "orderId" : "35098",
+      "totalPrice" : "2380"
+    },
+    "37501" : {
+      "address" : "erg",
+      "customerName" : "we",
+      "foodName" : "Pasta",
+      "mobileNumber" : "ewf",
+      "orderId" : "37501",
+      "totalPrice" : "750"
+    },
+    "38683" : {
+      "address" : "kandy",
+      "customerName" : "kalum",
+      "foodName" : "Food Name",
+      "mobileNumber" : "0768644258",
+      "orderId" : "38683",
+      "totalPrice" : "900"
+    },
+    "40567" : {
+      "address" : "No56, Colombo",
+      "customerName" : "Kamal",
+      "foodName" : "Bread",
+      "mobileNumber" : "0713486346",
+      "orderId" : "40567",
+      "totalPrice" : "320"
+    },
+    "41428" : {
+      "address" : "New Castle Rd, Panadura",
+      "customerName" : "Natalie Fernandez",
+      "foodName" : "Club Sandwitches",
+      "mobileNumber" : "0756477120",
+      "orderId" : "41428",
+      "totalPrice" : "900"
+    },
+    "44244" : {
+      "address" : "7/A, Baskar Rd, Colombo 5",
+      "customerName" : "Natalie Fernandez",
+      "foodName" : "French fries",
+      "mobileNumber" : "0756477120",
+      "orderId" : "44244",
+      "totalPrice" : "450"
+    },
+    "44978" : {
+      "address" : "No:12A, Malabe",
+      "customerName" : "Kelum Amarasena",
+      "foodName" : "Food Name",
+      "mobileNumber" : "0702231890",
+      "orderId" : "44978",
+      "totalPrice" : "900"
+    },
+    "48066" : {
+      "address" : "123/5, New Kandy Rd, Kadawatha",
+      "customerName" : "Samakya Perera",
+      "foodName" : "Fluffy Pancakes",
+      "mobileNumber" : "0701116345",
+      "orderId" : "48066",
+      "totalPrice" : "250"
+    },
+    "49812" : {
+      "address" : "200,kurunagala road ,kandy",
+      "customerName" : "duvindu",
+      "foodName" : "Food Namggggge",
+      "mobileNumber" : "07684295076",
+      "orderId" : "49812",
+      "totalPrice" : "7404"
+    },
+    "55859" : {
+      "address" : "12A/D, New Carsle Rd, Colombo",
+      "customerName" : "Tessa Alwis",
+      "foodName" : "French fries",
+      "mobileNumber" : "0712261890",
+      "orderId" : "55859",
+      "totalPrice" : "450"
+    },
+    "63040" : {
+      "address" : "Kandy",
+      "customerName" : "Isuru Bowatte",
+      "foodName" : "Pasta",
+      "mobileNumber" : "0712356533",
+      "orderId" : "63040",
+      "totalPrice" : "500"
+    },
+    "65020" : {
+      "address" : "asdfggh",
+      "customerName" : "aaa",
+      "foodName" : "Food Name",
+      "mobileNumber" : "12345",
+      "orderId" : "65020",
+      "totalPrice" : "1350"
+    },
+    "68287" : {
+      "address" : "Kandy",
+      "customerName" : "Sanduni",
+      "foodName" : "Pasta",
+      "mobileNumber" : "0712415543",
+      "orderId" : "68287",
+      "totalPrice" : "250"
+    },
+    "75279" : {
+      "address" : "Katugasthota",
+      "customerName" : "Piumi",
+      "foodName" : "Pasta",
+      "mobileNumber" : "0751238976",
+      "orderId" : "75279",
+      "totalPrice" : "1000"
+    },
+    "78017" : {
+      "address" : "Kandy",
+      "customerName" : "Kelum",
+      "foodName" : "Food Namggggge",
+      "mobileNumber" : "0713345133",
+      "orderId" : "78017",
+      "totalPrice" : "2468"
+    },
+    "79429" : {
+      "address" : "Daraniyagala",
+      "customerName" : "Darani",
+      "foodName" : "Burger",
+      "mobileNumber" : "0786545671",
+      "orderId" : "79429",
+      "totalPrice" : "680"
+    },
+    "81499" : {
+      "address" : "",
+      "customerName" : "",
+      "foodName" : "Food Name",
+      "mobileNumber" : "",
+      "orderId" : "81499",
+      "totalPrice" : "1156"
+    },
+    "83384" : {
+      "address" : "2124",
+      "customerName" : "sa",
+      "foodName" : "Pasta",
+      "mobileNumber" : "2421",
+      "orderId" : "83384",
+      "totalPrice" : "500"
+    },
+    "84863" : {
+      "address" : "Panvila",
+      "customerName" : "Malsha",
+      "foodName" : "Burger",
+      "mobileNumber" : "0712316738",
+      "orderId" : "84863",
+      "totalPrice" : "680"
+    },
+    "85087" : {
+      "address" : "Panwila",
+      "customerName" : "Deshini",
+      "foodName" : "Burger",
+      "mobileNumber" : "07654783210",
+      "orderId" : "85087",
+      "totalPrice" : "680"
+    },
+    "86792" : {
+      "address" : "kandy",
+      "customerName" : "Sanduni Nawarathne",
+      "foodName" : "Pasta",
+      "mobileNumber" : "0785643521",
+      "orderId" : "86792",
+      "totalPrice" : "1000"
+    },
+    "93962" : {
+      "address" : "",
+      "customerName" : "",
+      "foodName" : "Food Name",
+      "mobileNumber" : "",
+      "orderId" : "93962",
+      "totalPrice" : "900"
+    },
+    "96471" : {
+      "address" : "qwerty",
+      "customerName" : "Era",
+      "foodName" : "Food Namggggge",
+      "mobileNumber" : "1234567890",
+      "orderId" : "96471",
+      "totalPrice" : "3702"
+    }
+  },
+  "assignedOrders" : {
+    "990570426V" : {
+      "48066" : {
+        "address" : "123/5, New Kandy Rd, Kadawatha",
+        "customerName" : "Samakya Perera",
+        "foodName" : "Fluffy Pancakes",
+        "mobileNumber" : "0701116345",
+        "orderId" : "48066",
+        "totalPrice" : "250"
+      }
+    }
+  },
+  "commissionForRiders" : {
+    "990570426V" : {
+      "forOwner" : 0,
+      "totalCommission" : 0,
+      "totalCostOfDeliveredItems" : 0,
+      "totalItemDelivered" : 0
+    }
+  },
+  "completedOrdersByRiders" : {
+    "990570426V" : {
+      "15953" : {
+        "address" : "No45, Malabe, Kaduwela",
+        "customerName" : "Alex Nethal",
+        "foodName" : "Club Sandwitches",
+        "mobileNumber" : "+94753567638",
+        "orderId" : "15953",
+        "totalPrice" : "450"
+      },
+      "41428" : {
+        "address" : "New Castle Rd, Panadura",
+        "customerName" : "Natalie Fernandez",
+        "foodName" : "Club Sandwitches",
+        "mobileNumber" : "0756477120",
+        "orderId" : "41428",
+        "totalPrice" : "900"
+      },
+      "44244" : {
+        "address" : "7/A, Baskar Rd, Colombo 5",
+        "customerName" : "Natalie Fernandez",
+        "foodName" : "French fries",
+        "mobileNumber" : "0756477120",
+        "orderId" : "44244",
+        "totalPrice" : "450"
+      }
+    }
+  },
+  "customers" : {
+    "591652729V" : {
+      "customerMobile" : "0717219635",
+      "customerName" : "Bandula Dissanayake",
+      "customerNic" : "591652729V",
+      "customerPassword" : "123"
+    },
+    "674512345V" : {
+      "customerMobile" : "0703211678",
+      "customerName" : "Neetha Fernando",
+      "customerNic" : "674512345V",
+      "customerPassword" : "Neetha@123"
+    },
+    "913012679V" : {
+      "customerMobile" : "0771522810",
+      "customerName" : "Mayuka Perera",
+      "customerNic" : "913012679V",
+      "customerPassword" : "Mayu@123"
+    },
+    "914550413V" : {
+      "customerMobile" : "0756477120",
+      "customerName" : "Natalie Fernandez",
+      "customerNic" : "914550413V",
+      "customerPassword" : "Natalie@123"
+    },
+    "914556189V" : {
+      "customerMobile" : "0785615899",
+      "customerName" : "Liza Maria",
+      "customerNic" : "914556189V",
+      "customerPassword" : "Lizy"
+    },
+    "935612378V" : {
+      "customerMobile" : "0712261890",
+      "customerName" : "Tessa Alwis",
+      "customerNic" : "935612378V",
+      "customerPassword" : "Tess@123"
+    },
+    "975630412V" : {
+      "customerMobile" : "0701113425",
+      "customerName" : "Julia Banks",
+      "customerNic" : "975630412V",
+      "customerPassword" : "Jules@123"
+    },
+    "975802469V" : {
+      "customerMobile" : "071319495949494",
+      "customerName" : "Desh",
+      "customerNic" : "975802469V",
+      "customerPassword" : "123"
+    },
+    "976545344V" : {
+      "customerMobile" : "0776262555",
+      "customerName" : "madarha",
+      "customerNic" : "976545344V",
+      "customerPassword" : "madu"
+    },
+    "977621348V" : {
+      "customerMobile" : "077626200",
+      "customerName" : "ishara",
+      "customerNic" : "977621348V",
+      "customerPassword" : "ishara"
+    },
+    "983520520V" : {
+      "customerMobile" : "0712312567",
+      "customerName" : "Anne Maria",
+      "customerNic" : "983520520V",
+      "customerPassword" : "AnnMari"
+    },
+    "991271345V" : {
+      "customerMobile" : "0701116345",
+      "customerName" : "Samakya Perera",
+      "customerNic" : "991271345V",
+      "customerPassword" : "sam@123"
+    }
+  },
+  "food" : {
+    "20297" : {
+      "foodDes" : "Baked with dark chocolate ships and oats",
+      "foodID" : "20297",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F20297?alt=media&token=cba85040-05a3-43ad-b988-99327ff16a9e",
+      "foodName" : "Chocolate chip cookies ",
+      "foodPrice" : "200.00"
+    },
+    "54658" : {
+      "foodDes" : "French fries, or simply fries, chips, finger chips, or French-fried potatoes, are batonnet or allumette-cut deep-fried potatoes. ",
+      "foodID" : "54658",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F54658?alt=media&token=97836231-5d19-42a4-b632-b9376e28e806",
+      "foodName" : "French fries",
+      "foodPrice" : "450"
+    },
+    "62558" : {
+      "foodDes" : "Rice cooked with shredded lamb or beef, along with onions, cabbage, carrots and bell pepper.",
+      "foodID" : "62558",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F62558?alt=media&token=260574d8-8d41-4750-a77f-beee6a0e54ec",
+      "foodName" : "Mongolian Rice",
+      "foodPrice" : "700"
+    },
+    "63325" : {
+      "foodDes" : "Get out the submarine rolls and a stalk of celery for these Tuna Salad Submarines",
+      "foodID" : "63325",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F63325?alt=media&token=4701c1e4-44ec-4b4a-9b79-54490561b487",
+      "foodName" : "Tuna Salad Submarine",
+      "foodPrice" : "700"
+    },
+    "63533" : {
+      "foodDes" : "A stack of warm,fluffy pancakes are sure to bring smiles to even the groggiest early morning risers",
+      "foodID" : "63533",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F63533?alt=media&token=2b980ea9-d012-4e65-8fdb-3e56397bc1a2",
+      "foodName" : "Fluffy Pancakes",
+      "foodPrice" : "250"
+    },
+    "65120" : {
+      "foodDes" : "yummy shake with oreo and kitkat",
+      "foodID" : "65120",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F65120?alt=media&token=c3a5d1a4-d603-4852-8e61-d2916c8923ce",
+      "foodName" : "Chocolate milk shake",
+      "foodPrice" : "350.00"
+    },
+    "69259" : {
+      "foodDes" : "This Italian chicken, spinach and ricotta cannelloni is a great meal the whole family will enjoy",
+      "foodID" : "69259",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F69259?alt=media&token=02b00a0b-ac59-44af-a67d-5303a2d367d3",
+      "foodName" : "Italian Cannelloni",
+      "foodPrice" : "370"
+    },
+    "74549" : {
+      "foodDes" : "Slice of cheese is placed on top of the meat patty, but the burger can include variations in structure, ingredients and composition. The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt.",
+      "foodID" : "74549",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F74549?alt=media&token=f61e165b-a696-4722-bfc1-66954f2475a1",
+      "foodName" : "Cheese Burger",
+      "foodPrice" : "400"
+    },
+    "76696" : {
+      "foodDes" : "Every kid's favourtite.. \"Spaghetti\" grab your dish.",
+      "foodID" : "76696",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F76696?alt=media&token=17468dbf-36c2-4d4f-89f9-2ee9995ec8c0",
+      "foodName" : "Spaghetti",
+      "foodPrice" : "250"
+    },
+    "80812" : {
+      "foodDes" : "Sliced cooked poultry, ham or fried bacon, lettuce, tomato, and mayonnaise",
+      "foodID" : "80812",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F80812?alt=media&token=f346b092-0ecb-451d-9846-beed53daa517",
+      "foodName" : "Club Sandwitches",
+      "foodPrice" : "450"
+    },
+    "81473" : {
+      "foodDes" : "Fire up the grill to spice up your dinner with this delicious kebab seasoned with chillie sauce",
+      "foodID" : "81473",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F81473?alt=media&token=d9bffc56-968e-4f30-89af-7f34ba45f0c4",
+      "foodName" : "Kebab",
+      "foodPrice" : "300"
+    },
+    "86823" : {
+      "foodDes" : "Impress your guests with Japanese Sushi. Only from FreshFred!!",
+      "foodID" : "86823",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F86823?alt=media&token=bcbb0635-7284-489f-b41d-73c28e847306",
+      "foodName" : "Japanese Sushi",
+      "foodPrice" : "200"
+    },
+    "93002" : {
+      "foodDes" : "These Tacos take just a few moments to prepare and less than a minuite to gobble",
+      "foodID" : "93002",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F93002?alt=media&token=1a80a01a-6f43-49e2-bbc9-d539925823c2",
+      "foodName" : "Taco",
+      "foodPrice" : "150"
+    },
+    "96828" : {
+      "foodDes" : "traditional cuban highball consists of five magic ingredients ",
+      "foodID" : "96828",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F96828?alt=media&token=be4f8536-056d-4afe-a74d-99a6d5396af3",
+      "foodName" : "Mojito",
+      "foodPrice" : "350.00"
+    },
+    "97730" : {
+      "foodDes" : "Discover this marvelously melty classic cheese Lasagna. ",
+      "foodID" : "97730",
+      "foodImage" : "https://firebasestorage.googleapis.com/v0/b/freshfred-sliit.appspot.com/o/foods%2F97730?alt=media&token=8f9c3aa0-cfbf-49a6-9657-659d57346385",
+      "foodName" : "Classic Cheese Lasagna",
+      "foodPrice" : "550"
+    }
+  },
+  "orders" : {
+    "55860" : {
+      "address" : "12/7,Peradeniya Rd, Kandy",
+      "customerName" : "Mayuka Perera",
+      "foodName" : "Fluffy Pancakes",
+      "mobileNumber" : "0771522810",
+      "orderId" : "55860",
+      "totalPrice" : "250"
+    },
+    "59037" : {
+      "address" : "19/A, Flower Garden Rd, Colombo.",
+      "customerName" : "Julia Banks",
+      "foodName" : "Italian Cannelloni",
+      "mobileNumber" : "0701113425",
+      "orderId" : "59037",
+      "totalPrice" : "1110"
+    },
+    "62259" : {
+      "address" : "123/5, New Kandy Rd, Kadawatha",
+      "customerName" : "Samakya Perera",
+      "foodName" : "Spaghetti",
+      "mobileNumber" : "0701116345",
+      "orderId" : "62259",
+      "totalPrice" : "250"
+    },
+    "71338" : {
+      "address" : "No45, Malabe, Kaduwela",
+      "customerName" : "Alex Nethal",
+      "foodName" : "Tuna submarine ",
+      "mobileNumber" : "+94753567638",
+      "orderId" : "71338",
+      "totalPrice" : "700"
+    },
+    "72167" : {
+      "address" : "Kandy",
+      "customerName" : "Natalie Fernandez",
+      "foodName" : "Classic Cheese Lasagna",
+      "mobileNumber" : "0713417781",
+      "orderId" : "72167",
+      "totalPrice" : "550"
+    },
+    "77465" : {
+      "address" : "12/7,Peradeniya Rd, Kandy",
+      "customerName" : "Mayuka Perera",
+      "foodName" : "Spaghetti",
+      "mobileNumber" : "0771522810",
+      "orderId" : "77465",
+      "totalPrice" : "250"
+    },
+    "78719" : {
+      "address" : "No45, Malabe, Kaduwela",
+      "customerName" : "Alex Nethal",
+      "foodName" : "French fries",
+      "mobileNumber" : "+94753567638",
+      "orderId" : "78719",
+      "totalPrice" : "900"
+    },
+    "89540" : {
+      "address" : "Kandy",
+      "customerName" : "Neetha Fernando",
+      "foodName" : "French fries",
+      "mobileNumber" : "0703211678",
+      "orderId" : "89540",
+      "totalPrice" : "900"
+    },
+    "89551" : {
+      "address" : "Kandy",
+      "customerName" : "Natalie Fernandez",
+      "foodName" : "Fluffy Pancakes",
+      "mobileNumber" : "0713417781",
+      "orderId" : "89551",
+      "totalPrice" : "250"
+    },
+    "97709" : {
+      "address" : "7/A, Baskar Rd, Colombo 5",
+      "customerName" : "Natalie Fernandez",
+      "foodName" : "Mongolian Rice",
+      "mobileNumber" : "0756477120",
+      "orderId" : "97709",
+      "totalPrice" : "700"
+    }
+  },
+  "owners" : {
+    "990570427V" : {
+      "ownerNic" : "990570427V",
+      "ownerPassword" : "1234qwe"
+    }
+  },
+  "riders" : {
+    "990570426V" : {
+      "riderBikeNumber" : "XV-3456",
+      "riderCommission" : "10",
+      "riderMobile" : "0774809190",
+      "riderName" : "Harsha",
+      "riderNic" : "990570426V",
+      "riderPassword" : "123qwe"
+    }
+  },
+  "supplierOrderRequests" : {
+    "012345678V" : {
+      "12120" : {
+        "supplierItemName" : "fh",
+        "supplierOrderAddress" : "31",
+        "supplierOrderMobile" : "1224241",
+        "supplierOrderQuantity" : "12"
+      }
+    },
+    "154267845V" : {
+      "33079" : {
+        "supplierItemName" : "Cup Cake",
+        "supplierOrderAddress" : "31/7 Malabe",
+        "supplierOrderMobile" : "0784563259",
+        "supplierOrderQuantity" : "12"
+      },
+      "73228" : {
+        "supplierItemName" : "Cake",
+        "supplierOrderAddress" : "32/7 Malabe",
+        "supplierOrderMobile" : "0784563238",
+        "supplierOrderQuantity" : "20"
+      }
+    }
+  },
+  "suppliers" : {
+    "012345678V" : {
+      "supplierItem" : "butter",
+      "supplierMobile" : "0123456789",
+      "supplierName" : "malith",
+      "supplierNic" : "012345678V",
+      "supplierPassword" : "malith@67124"
+    },
+    "154267845V" : {
+      "supplierItem" : "Cake",
+      "supplierMobile" : "0786545683",
+      "supplierName" : "Malaka",
+      "supplierNic" : "154267845V",
+      "supplierPassword" : "malith@9876"
+    },
+    "991235789V" : {
+      "supplierItem" : "Bun",
+      "supplierMobile" : "0784563218",
+      "supplierName" : "Dasun",
+      "supplierNic" : "991235789V",
+      "supplierPassword" : "Kasun@87564"
+    }
+  },
+  "totalEarningHistory" : {
+    "forOwner" : 4738.73,
+    "totalCostOfDeliveredItems" : 17322,
+    "totalItemDelivered" : 10,
+    "totalRiderCommission" : 3483.26
+  }
+}
